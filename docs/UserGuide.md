@@ -15,7 +15,7 @@ LibTask is a **desktop application for librarians** to manage book loans and req
 ## **1. Introduction**
 
 ### 1.1. Welcome to LibTask
-As a school librarian of a large library, you may already have your own desktop library software. However, existing library software are GUI-based and slow to work with. If you prefer to work with CLI commands efficiently while still having the benefits of aesthetic displays, then LibTask is designed just for you! LibTask provides you with a well packaged system of commands for managing book loans and book requests by your patrons. With LibTask, you can quickly process borrowing and returning of books by simply typing a few commands. The system also maintains two independent lists of books and patrons, allowing you to perform queries more efficiently.
+As a school librarian of a large library, you may already have your own desktop library software. However, existing library software is GUI-based and slow to work with. If you prefer to work with CLI commands efficiently while still having the benefits of aesthetic displays, then LibTask is designed just for you! LibTask provides you with a well-packaged system of commands for managing book loans and book requests by your patrons. With LibTask, you can quickly process the borrowing and returning of books by simply typing a few commands. The system also maintains two independent lists of books and patrons, allowing you to perform queries more efficiently.
 
 ### 1.2. About the User Guide
 The purpose of this guide is to explain to you how to use **LibTask** and to allow you to have an enjoyable experience. It explains the features and commands compatible with LibTask. It is also structured in a way to let you easily navigate to relevant sections.
@@ -48,7 +48,7 @@ If you are an advanced user, you can refer to our [Command summary](#5-command-s
 
 1. Download the latest `libtask.jar` from [here](https://github.com/AY2122S2-CS2103T-W14-1/tp/releases).
 
-1. Copy the file to the folder you want to use as the _home folder_ for your LibTask.
+1. Copy the file to the folder you want to use as the home folder for your LibTask.
 
 1. Double-click the file to start the app. The GUI is similar to the one shown below and should appear in a few seconds.<br>
    ![Ui](images/Ui.png)
@@ -620,18 +620,10 @@ To delete a specific book, you can enter the delete command with the format show
 
 </div>
 
-<div style="page-break-after: always;"></div>
-
 **Example**:
 To delete the first book, you can enter the following command:
 
 `book delete 1`
-
-Before entering the command, there is a copy of `Harry Potter and The Philosopher's Stone` as the first book.
-![book-delete-1.png](images/book-delete-1.PNG)
-
-After entering the command, that copy of `Harry Potter and The Philospher's Stone` is deleted.
-![book-delete-2.png](images/book-delete-2.PNG)
 
 <div style="page-break-after: always;"></div>
 
