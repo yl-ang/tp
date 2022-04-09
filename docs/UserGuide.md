@@ -308,8 +308,6 @@ Format: `patron list`
 
 </div>
 
-**Example:** `patron list`
-
 <div style="page-break-after: always;"></div>
 
 #### 3.2.3. Finding patrons: `patron find`
@@ -511,8 +509,6 @@ To show a list of all books in LibTask, you can enter the list command with the 
 * If all books are already listed, the command will still show a success message as having listed all books, but the books listed will have no visual change.
 
 </div>
-
-**Example**: `book list`
 
 #### 3.3.3. Finding books : `book find`
 
