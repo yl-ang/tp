@@ -101,13 +101,6 @@ to doing this tutorial.
    **`book add n/The Da Vinci Code i/97803-85513-227 a/Dan Brown t/Thriller t/Mystery t/Crime`**: Adds a book titled 
      `The Da Vinci Code` into LibTask's book list.
 
-   **`book add n/The Two Towers i/97800-07203-598 a/J. R. R. Tolkein t/Action t/Fantasy t/Adventure t/Drama`**: Adds a 
-      book titled `The Two Towers` into LibTask's book list.
-
-   **`book add n/Death on the Nile i/97800-06168-959 a/Agatha Christie t/Mystery t/Drama t/Crime t/Thriller`**: 
-      Adds a book titled `Death on the Nile` into LibTask's book list.
-
-
 3. Add some patrons into LibTask's patron list using the `patron add` command.
 
    Below are some sample commands you can try running. You may continue adding more patrons while
@@ -122,37 +115,31 @@ to doing this tutorial.
    **`patron add n/Harper Lee s/A0988773M p/91437496 e/harperlee@u.nus.edu`**: Adds a patron named `Harper Lee` into 
       LibTask's patron list.
 
-   **`patron add n/Jessica s/A6666789G p/90194628 e/jessica@u.nus.edu t/student`**: Adds a patron named `Jessica` into 
-      LibTask's patron list.
-
-   **`patron add n/Christian Grey s/A0123345L p/91214567 e/christian@u.nus.edu`**: Adds a patron named `Christian Grey` 
-      into LibTask's patron list.
-
 #### Step 2: Borrow some books
 
-Harper Lee wishes to borrow Death on the Nile. You may create a book loan for her in one of the two following ways:
+Harper Lee wishes to borrow "The Da Vinci Code". You may create a book loan for her in one of the two following ways:
 
 Method A:
 1. Scroll through the patron list to find the index at which `Harper Lee` is stored in LibTask. Let's say this index 
    number is 3.
-2. Scroll through the book list to find the index at which `Death on the Nile` is stored in LibTask. Let's say this 
-   index number is 5.
-3. Enter command `borrow 3 5 25-Apr-2022` in the Command box. `Harper Lee` has now borrowed `Death on the Nile` with a 
-   return date of 25th April 2022. You can confirm this by viewing the book's status in the book list.  
+2. Scroll through the book list to find the index at which `The Da Vinci Code` is stored in LibTask. Let's say this 
+   index number is 3.
+3. Enter command `borrow 3 3 25-Apr-2022` in the Command box. `Harper Lee` has now borrowed `The Da Vinci Code` with a 
+   return date of 25th April 2022. You can confirm this by viewing the book's status in the book list.
 
 Method B:
-1. Enter `patron find harper lee` in the Command box. Running this command will display `Harper Lee` first in the patron
+1. Enter `patron find harper lee` in the Command box. Running this command will display `Harper Lee` first in the patron 
    list. Learn more about the format of the `patron find` command [here](#324-finding-patrons-patron-find).
-2. Enter `book find n/death on the nile` in the Command box. Running this command will display `Death on the Nile` first
+2. Enter `book find n/The Da Vinci Code` in the Command box. Running this command will display `The Da Vinci Code` first
    in the book list. Learn more about the format of the `book find` command [here](#333-finding-books--book-find).
-3. Enter command `borrow 1 1 25-Apr-2022` in the Command box. `Harper Lee` has now borrowed `Death on the Nile` with a 
+3. Enter command `borrow 1 1 25-Apr-2022` in the Command box. `Harper Lee` has now borrowed `The Da Vinci Code` with a 
    return date of 25th April 2022. You can confirm this by viewing the book's status in the book list.
 
 <div markdown="block" class="alert alert-info">
 
 **:information_source: Notes:**<br>
 
-* The return dates of the above `borrow` commands may be changed. 
+* The return dates of the above `borrow` commands may be changed.
 
 * Learn more about the `borrow` command [here](#336-borrowing-a-book--borrow).
 
@@ -160,36 +147,36 @@ Method B:
 
 #### Step 3: Creating book requests
 
-Christian Grey wishes to borrow Death on the Nile however, the book seems to be borrowed by Harper Lee when the command 
-`book find n/death on the nile` is run. In this case and similar scenarios, you can create a book request in one of the 
+Bob Miller wishes to borrow "The Da Vinci Code". However, the book seems to be borrowed by Harper Lee when the command 
+`book find n/The Da Vinci Code` is run. In this case and similar scenarios, you can create a book request in one of the 
 two following ways:
 
 Method A:
-1. Scroll through the patron list to find the index at which `Christian Grey` is stored in LibTask. Let's say this index
-   number is 5.
-2. Scroll through the book list to find the index at which `Death on the Nile` is stored in LibTask. Let's say this
-   index number is 5.
-3. Enter command `book request 5 5` in the Command Box. `Christian Grey` has now requested for `Death on the Nile`. You can 
+1. Scroll through the patron list to find the index at which `Bob Miller` is stored in LibTask. Let's say this index
+   number is 2.
+2. Scroll through the book list to find the index at which `The Da Vinci Code` is stored in LibTask. Let's say this
+   index number is 3.
+3. Enter command `book request 2 3` in the Command Box. `Bob Miller` has now requested for `The Da Vinci Code`. You can 
    confirm this by viewing the book's status in the book list.
 
 Method B:
-1. Enter `patron find christian grey` in the Command box. Running this command will display `Christian Grey` first in 
+1. Enter `patron find Bob Miller` in the Command box. Running this command will display `Bob Miller` first in 
    the patron list. Learn more about the format of the `patron find` command [here](#324-finding-patrons-patron-find).
-2. Enter `book find n/death on the nile` in the Command box. Running this command will display `Death on the Nile` first
+2. Enter `book find n/The Da Vinci Code` in the Command box. Running this command will display `The Da Vinci Code` first
    in the book list. Learn more about the format of the `book find` command [here](#333-finding-books--book-find).
-3. Enter command `book request 1 1` in the Command box. `Christian Grey` has now requested for `Death on the Nile`. You can
+3. Enter command `book request 1 1` in the Command box. `Bob Miller` has now requested for `The Da Vinci Code`. You can
    confirm this by viewing the book's status in the book list.
 
-Subsequently, when Harper Lee returns Death on the Nile, find the book by entering `book find n/death on the nile` 
+Subsequently, when Harper Lee returns "The Da Vinci Code", find the book by entering `book find n/The Da Vinci Code` 
 (which would result in it being displayed first) followed by `return b/1` (more about the `return` command 
-[here](#337-returning-a-book--return)). `Death on the Nile` is hence returned and the `Result box` would prompt you to 
-notify Christian Grey that the book is now available. 
+[here](#337-returning-a-book--return)). `The Da Vinci Code` is hence returned and the `Result box` would prompt you to 
+notify Bob Miller that the book is now available.
 
 <div markdown="block" class="alert alert-info">
 
 **:information_source: Notes:**<br>
 
-* Multiple patrons may request for `Death on the Nile` in which case, `Result box` would remind you to notify all of them once the book is returned.
+* Multiple patrons may request for `The Da Vinci Code` in which case, `Result box` would remind you to notify all of them once the book is returned.
 
 * Learn more about the request command [here](#338-requesting-a-book--book-request).
 
