@@ -296,7 +296,7 @@ you can enter the following command:
 
 #### 3.2.2. Listing all patrons : `patron list`
 
-To show a list of all patrons in LibTask, you can enter the list command with the format shown below.
+To show a list of all patrons in LibTask, you can enter the list command shown below.
 
 Format: `patron list`
 
