@@ -184,6 +184,8 @@ Subsequently, when Harper Lee returns "The Da Vinci Code", find the book by ente
 [here](#337-returning-a-book--return)). `The Da Vinci Code` is hence returned and the `Result box` would prompt you to 
 notify Bob Miller that the book is now available.
 
+**Congratulations! You have completed our tutorial!** You can now head over to our [Features](#3-features) section to learn more about our commands in greater detail.
+
 --------------------------------------------------------------------------------------------------------------------
 
 <div style="page-break-after: always;"></div>
