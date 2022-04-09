@@ -293,6 +293,8 @@ you can enter the following command:
 
 `patron add n/John s/A0212828X p/93231222 e/e03482@u.nus.edu t/student`
 
+<div style="page-break-after: always;"></div>
+
 #### 3.2.2. Listing all patrons : `patron list`
 
 To show a list of all patrons in LibTask, you can enter the list command shown below.
@@ -306,8 +308,6 @@ Format: `patron list`
 * If all patrons are already listed, the command will still show a success message as having listed all patrons, but the patrons listed will have no visual change.
 
 </div>
-
-<div style="page-break-after: always;"></div>
 
 #### 3.2.3. Finding patrons: `patron find`
 
@@ -900,6 +900,6 @@ Since 100 is a multiple of 10, the above 13-digit ISBN has a valid checksum.
 | Java                                      | A programming language which was used to built LibTask.                                         |
 | International Standard Book Number (ISBN) | An international standard identification number for identifying books.                          |
 | Patron                                    | Visitor of the library.                                                                         |
-| Checksum                                  | A method to validate the ISBN                                                                   |
+| Checksum                                  | A method to validate the ISBN.                                                                  |
 
 --------------------------------------------------------------------------------------------------------------------
