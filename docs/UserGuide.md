@@ -74,7 +74,7 @@ The various GUI components of LibTask are described in the picture below:
 
 ### 2.3. Tutorial
 
-#### Step 1: Setting up your patron and book database
+#### Step 1: Adding patrons and books into LibTask
 
 1. Remove existing sample data from LibTask's patron and book lists by entering the `clear` command in the Command Box.
 
@@ -87,7 +87,21 @@ to doing this tutorial.
 
 </div>
 
-2. Add some books into LibTask's book list using the `book add` command.
+2. Add some patrons into LibTask's patron list using the `patron add` command.
+
+   Below are some sample commands you can try running. You may continue adding more patrons while
+   ensuring that the format of your command follows [patron add](#321-adding-a-patron-patron-add).
+
+   `patron add n/Alice s/A0123456H p/90123212 e/profA@u.nus.edu t/professor`: Adds a patron named `Alice` into
+   LibTask's patron list.
+
+   `patron add n/Bob Miller s/A4468931X p/92940284 e/bobmiller@u.nus.edu t/student`: Adds a patron named
+   `Bob Miller` into LibTask's patron list.
+
+   `patron add n/Harper Lee s/A0988773M p/91437496 e/harperlee@u.nus.edu`: Adds a patron named `Harper Lee` into
+   LibTask's patron list.
+
+3. Add some books into LibTask's book list using the `book add` command.
 
    Below are some sample commands you can try running. You may continue adding more books while
    ensuring that the format of your command follows [book add](#331-adding-a-book-book-add).
@@ -100,20 +114,6 @@ to doing this tutorial.
 
    `book add n/The Da Vinci Code i/97803-85513-227 a/Dan Brown t/Thriller t/Mystery t/Crime`: Adds a book titled 
      `The Da Vinci Code` into LibTask's book list.
-
-3. Add some patrons into LibTask's patron list using the `patron add` command.
-
-   Below are some sample commands you can try running. You may continue adding more patrons while
-   ensuring that the format of your command follows [patron add](#321-adding-a-patron-patron-add).
-
-   `patron add n/Alice s/A0123456H p/90123212 e/profA@u.nus.edu t/professor`: Adds a patron named `Alice` into 
-      LibTask's patron list.
-
-   `patron add n/Bob Miller s/A4468931X p/92940284 e/bobmiller@u.nus.edu t/student`: Adds a patron named 
-     `Bob Miller` into LibTask's patron list.
-
-   `patron add n/Harper Lee s/A0988773M p/91437496 e/harperlee@u.nus.edu`: Adds a patron named `Harper Lee` into 
-      LibTask's patron list.
 
 <div style="page-break-after: always;"></div>
 
