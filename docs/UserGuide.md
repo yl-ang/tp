@@ -147,6 +147,8 @@ Method B:
 
 </div>
 
+<div style="page-break-after: always;"></div>
+
 #### Step 3: Creating book requests
 
 Bob Miller wishes to borrow "The Da Vinci Code". However, the book seems to be borrowed by Harper Lee when the command 
@@ -312,7 +314,7 @@ Format: `patron list`
 
 <div style="page-break-after: always;"></div>
 
-#### 3.2.4. Finding patrons: `patron find`
+#### 3.2.3. Finding patrons: `patron find`
 
 To find patrons in LibTask based on patron name, you can enter the find command with the format shown below.
 
@@ -353,7 +355,7 @@ After entering the command, only patrons with names containing "alex" or "david"
 
 <div style="page-break-after: always;"></div>
 
-#### 3.2.3. Editing a patron : `patron edit`
+#### 3.2.4. Editing a patron : `patron edit`
 
 To edit the details of a specific patron, you can enter the edit command with the format shown below.
 
