@@ -215,8 +215,6 @@ This section describes the features supported by LibTask and how to use them.
 
 </div>
 
-<div style="page-break-after: always;"></div>
-
 ### 3.1. General Features
 
 This section describes features users can use to navigate through LibTask.
