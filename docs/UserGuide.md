@@ -116,7 +116,7 @@ to doing this tutorial.
 
 #### Step 2: Borrow some books
 
-Harper Lee wishes to borrow "The Da Vinci Code".You may create a book loan for her in one of the two following ways:
+Harper Lee wishes to borrow "The Da Vinci Code". You may create a book loan for her in one of the two following ways:
 
 <div markdown="block" class="alert alert-info">
 
