@@ -15,7 +15,7 @@ LibTask is a **desktop application for librarians** to manage book loans and req
 ## **1. Introduction**
 
 ### 1.1. Welcome to LibTask
-As a school librarian of a large library, you may already have your own desktop library software. However, existing library software is GUI-based and slow to work with. If you prefer to work with CLI commands efficiently while still having the benefits of aesthetic displays, then LibTask is designed just for you! LibTask provides you with a well-packaged system of commands for managing book loans and book requests by your patrons. The system also maintains two independent lists of books and patrons, allowing you to perform queries more efficiently.
+As a school librarian of a large library, you may already have your own desktop library software. However, existing library software is GUI-based and slow to work with. If you prefer to work with CLI commands efficiently while still having the benefits of aesthetic displays, then LibTask is designed just for you! LibTask provides you with a well-packaged system of commands for managing book loans and book requests by your patrons. With LibTask, you can quickly process the borrowing and returning of books by simply typing a few commands. The system also maintains two independent lists of books and patrons, allowing you to perform queries more efficiently.
 
 ### 1.2. About the User Guide
 The purpose of this guide is to explain to you how to use **LibTask** and to allow you to have an enjoyable experience. It explains the features and commands compatible with LibTask. It is also structured in a way to let you easily navigate to relevant sections.
@@ -452,7 +452,7 @@ Format: `book add n/BOOK_NAME i/ISBN [a/AUTHOR] … [t/TAG] … `
 
 <div markdown="block" class="alert alert-info">
 
-**:information_source:Notes about the add command:**<br>
+**:information_source: Notes about the add command:**<br>
 
 * BOOK_NAME must start and end with alphanumeric characters, and can only contain `'` character, `:` character and alphanumeric characters.
 
@@ -504,7 +504,7 @@ To show a list of all books in LibTask, you can enter the list command with the 
 
 To find books in LibTask based on book name, author or tags, you can enter the find command with the format shown below.
 
-**Format**: `book find PREFIX/KEYWORD`
+**Format**: `book find [n/NAME] [t/TAG] [a/AUTHOR]`
 
 <div markdown="block" class="alert alert-info">
 
@@ -512,7 +512,7 @@ To find books in LibTask based on book name, author or tags, you can enter the f
 
 * `PREFIX` must be either `t` (for find based on tag), `a` (for finding based on author), or `n` (for finding based on book name).
 
-* All books with a tag, or author, or book name that contains the substring `KEYWORD` will be displayed in the book list.
+* All books with a tag, or author, or book name that contains the substring of the given query will be displayed in the book list.
 
 </div>
 
@@ -818,16 +818,16 @@ to manually input additional commands to delete the "requested by" tags.
 
 ### 5.1. General Commands
 
-| Function                                   | Format Of Command                                                          |
-|--------------------------------------------|----------------------------------------------------------------------------|
-| **Show message to help page**              | `help`                                                                     |
-| **Clear all entries**                      | `clear`                                                                    |
-| **Exit the program**                       | `exit`                                                                     |
-| **Show previous commands**                 | `u`                                                                        |
+| Function                                   | Command Format |
+|--------------------------------------------|----------------|
+| **Show message to help page**              | `help`         |
+| **Clear all entries**                      | `clear`        |
+| **Exit the program**                       | `exit`         |
+| **Show previous commands**                 | `u`            |
 
 ### 5.2. Patron Commands
 
-| Function                            | Format Of Command                                                 |
+| Function                            | Command Format                                                    |
 |-------------------------------------|-------------------------------------------------------------------|
 | **Add a new patron**                | `patron add n/NAME s/ID p/PHONE e/EMAIL [t/TAG]…​`                |
 | **List all patrons**                | `patron list`                                                     |
@@ -838,7 +838,7 @@ to manually input additional commands to delete the "requested by" tags.
 
 ### 5.3. Book Commands
 
-| Function                               | Format Of Command                                                   |
+| Function                               | Command Format                                                      |
 |----------------------------------------|---------------------------------------------------------------------|
 | **Add a book**                         | `book add n/NAME i/ISBN [a/AUTHOR]…​ [t/CATEGORY_TAG]…​`            |
 | **List all books**                     | `book list`                                                         |
@@ -904,3 +904,5 @@ Since 100 is a multiple of 10, the above 13-digit ISBN has a valid checksum.
 | International Standard Book Number (ISBN) | An international standard identification number for identifying books.                          |
 | Patron                                    | Visitor of the library.                                                                         |
 | Checksum                                  | A method to validate the ISBN                                                                   |
+
+--------------------------------------------------------------------------------------------------------------------
