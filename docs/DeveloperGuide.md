@@ -771,10 +771,6 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
 --------------------------------------------------------------------------------------------------------------------
 
-
-<div style="page-break-after: always;"></div>
-
-
 **UC06: Add book to LibTask**
 
 **MSS**
@@ -820,12 +816,7 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
   Use case ends.
 
-
 --------------------------------------------------------------------------------------------------------------------
-
-
-<div style="page-break-after: always;"></div>
-
 
 **UC08: Edit a book on LibTask**
 
@@ -856,7 +847,6 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
     * 1c1. LibTask shows an error message saying that at least ISBN, author or category must be provided.
 
   Use case resumes from step 1.
-
 
 --------------------------------------------------------------------------------------------------------------------
 
@@ -889,9 +879,7 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
   Use case ends.
 
-
 --------------------------------------------------------------------------------------------------------------------
-
 
 **UC10: Delete Book from LibTask**
 
@@ -917,11 +905,7 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
    Use case resumes from step 1.
 
-
 --------------------------------------------------------------------------------------------------------------------
-
-
-<div style="page-break-after: always;"></div>
 
 
 **UC11: Borrow Book**
@@ -958,12 +942,7 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
   Use case resumes from step 3.
 
-
 --------------------------------------------------------------------------------------------------------------------
-
-
-<div style="page-break-after: always;"></div>
-
 
 **UC12: Return Book on LibTask**
 
@@ -997,12 +976,7 @@ Use case ends.
 
   Use case resumes from step 2
 
-
 --------------------------------------------------------------------------------------------------------------------
-
-
-<div style="page-break-after: always;"></div>
-
 
 **UC13: Show previously run commands**
 
@@ -1021,9 +995,7 @@ Extension
 
   Use case ends.
 
-
 --------------------------------------------------------------------------------------------------------------------
-
 
 **UC14: List books related to a patron**
 
@@ -1050,12 +1022,7 @@ Extension
 
   Use case ends
 
-
 --------------------------------------------------------------------------------------------------------------------
-
-
-<div style="page-break-after: always;"></div>
-
 
 **UC15: List patrons with overdue books**
 
@@ -1076,12 +1043,7 @@ Extension
 
   Use case ends.
 
-
 --------------------------------------------------------------------------------------------------------------------
-
-
-<div style="page-break-after: always;"></div>
-
 
 **UC16: Request Book**
 
@@ -1128,12 +1090,7 @@ Extension
 
   Use case resumes from step 3.
 
-
 --------------------------------------------------------------------------------------------------------------------
-
-
-<div style="page-break-after: always;"></div>
-
 
 **UC17: Asking for Help on LibTask**
 
@@ -1167,9 +1124,7 @@ Use case ends.
 
 Use case ends.
 
-
 --------------------------------------------------------------------------------------------------------------------
-
 
 <div style="page-break-after: always;"></div>
 
