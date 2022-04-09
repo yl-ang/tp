@@ -229,7 +229,7 @@ Format: `help`
 
 #### 3.1.2. Clearing all entries : `clear`
 
-<div markdown="block" class="alert alert-Warning">
+<div markdown="block" class="alert alert-warning">
 
 **:exclamation: Warning:**<br>
 
