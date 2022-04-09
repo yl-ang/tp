@@ -1283,6 +1283,18 @@ testers are expected to do more *exploratory* testing.
    2. Test case: `patron add n/Alice s/A1111111H p/90123212 e/profA@u.nus.edu t/professor`<br>
       Expected: Patron named `Alice` with id `A0123456H`, phone number `90123212` email `profA@u.nus.edu` and tag `professor` added to patron list.
 
+### Editing a patron
+
+1. Editing patrons while all patrons are listed.
+
+  1. Prerequisites: List all patrons using the `patron list` command. Ensure that there is only one patron in the patron list.
+
+  2. Test case: `patron edit 2 n/John Cena s/A2222222H p/91959491 e/johncena@u.nus.edu`<br>
+     Expected: Patron list remain unchanged. Error details shown in the status message.
+
+  3. Test case: `patron edit 1 n/John Cena s/A2222222H p/91959491 e/johncena@u.nus.edu`<br>
+     Expected: Name, id, phone number and email of the first patron in the book list are changed to "John Cena", "A2222222H", "91959491", "johncena@u.nus.edu" respectively.
+
 ### Finding a patron based on patron name
 
 1. Searching for patrons based on their names while there are no patrons with the names matching the provided keywords.
@@ -1299,19 +1311,7 @@ testers are expected to do more *exploratory* testing.
    2. Test case: `patron find alex`<br>
       Expected: Patron list displays all patrons with names containing the word "Alex".
 
-### Editing a patron
-
-1. Editing patrons while all patrons are listed.
-
-   1. Prerequisites: List all patrons using the `patron list` command. Ensure that there is only one patron in the patron list.
-
-   2. Test case: `patron edit 2 n/John Cena s/A2222222H p/91959491 e/johncena@u.nus.edu`<br>
-      Expected: Patron list remain unchanged. Error details shown in the status message.
-
-   3. Test case: `patron edit 1 n/John Cena s/A2222222H p/91959491 e/johncena@u.nus.edu`<br>
-      Expected: Name, id, phone number and email of the first patron in the book list are changed to "John Cena", "A2222222H", "91959491", "johncena@u.nus.edu" respectively.
-
-### Overdue command
+### Finding patrons with overdue books
 
 1. Displaying patrons with overdue books while all patrons are listed.
 
@@ -1348,28 +1348,23 @@ testers are expected to do more *exploratory* testing.
    2. Test case: `book list`<br>
       Expected: All books added after entering the `clear` command appear in the book list.
 
-### Finding a book based on tags, author, title
+### Listing all books related to a patron
 
-1. Searching for books based on their titles while there are books with titles matching the provided keywords.
+1. Listing all books borrowed by or requested by a patron while all books and patrons are being shown.
 
-   1. Prerequisites: List all patrons using the `book list` command. Ensure that there is at least one book whose title contains the word "Harry".
+  1. Prerequisites: List all books using the `book list` command. List all patrons with `patron list` command. Multiple books in the book list. Multiple patrons in the patron list. First book is borrowed by the first patron. Second book is requested by the second patron.
 
-   2. Test case: `book find n/Harry`
-      Expected: Book list displays all books with titles containing the word "Harry".
+  2. Test case: `book related 1`<br>
+     Expected: Only the first book is shown in the book list.
 
-2. Searching for books based on their authors while there are books with authors matching the provided keywords.
+  3. Test case: `book related 2`<br>
+     Expected: Only the second book is shown in the book list.
 
-   1. Prerequisites: List all patrons using the `book list` command. Ensure that there is at least one book whose authors contain the word "Suzanne".
+  4. Test case: `book related 0`<br>
+     Expected: Book list remains unchanged. Error details shown in the status message.
 
-   2. Test case: `book find a/Suzanne`
-      Expected: Book list displays all books with authors containing the word "Suzanne".
-
-3. Searching for books based on their authors while there are books with authors matching the provided keyword.
-
-   1. Prerequisites: List all patrons using the `book list` command. Ensure that there is at least one book whose tags matching the word "Romance".
-
-   2. Test case: `book find t/Romance`
-      Expected: Book list displays all books with tags matching the word "Romance".
+  5. Other incorrect book related commands to try: `book related`, `book related x`, `...` (where x is larger than the size of patron list)<br>
+     Expected: Similar to previous.
 
 ### Editing a book
 
@@ -1424,7 +1419,7 @@ testers are expected to do more *exploratory* testing.
    4. Test case: `borrow 2 2 01-May-2022`<br>
       Expected: No book is borrowed. Error details shown in the status message.
 
-### Returning a book
+### Returning a book or some books
    
 1. Returning a book that has at least one requester while all books and patrons are being shown.
 
@@ -1462,23 +1457,28 @@ testers are expected to do more *exploratory* testing.
    2. Test case: `book request 1 1`<br>
       Expected: No book is requested. Error details shown in the status message.
 
-### Listing all books related to a patron
+### Finding books based on tags, author, title
 
-1. Listing all books borrowed by or requested by a patron while all books and patrons are being shown.
+1. Searching for books based on their titles while there are books with titles matching the provided keywords.
 
-   1. Prerequisites: List all books using the `book list` command. List all patrons with `patron list` command. Multiple books in the book list. Multiple patrons in the patron list. First book is borrowed by the first patron. Second book is requested by the second patron.
+  1. Prerequisites: List all patrons using the `book list` command. Ensure that there is at least one book whose title contains the word "Harry".
 
-   2. Test case: `book related 1`<br>
-      Expected: Only the first book is shown in the book list.
+  2. Test case: `book find n/Harry`
+     Expected: Book list displays all books with titles containing the word "Harry".
 
-   3. Test case: `book related 2`<br>
-      Expected: Only the second book is shown in the book list.
+2. Searching for books based on their authors while there are books with authors matching the provided keywords.
 
-   4. Test case: `book related 0`<br>
-      Expected: Book list remains unchanged. Error details shown in the status message.
+  1. Prerequisites: List all patrons using the `book list` command. Ensure that there is at least one book whose authors contain the word "Suzanne".
 
-   5. Other incorrect book related commands to try: `book related`, `book related x`, `...` (where x is larger than the size of patron list)<br>
-      Expected: Similar to previous.
+  2. Test case: `book find a/Suzanne`
+     Expected: Book list displays all books with authors containing the word "Suzanne".
+
+3. Searching for books based on their authors while there are books with authors matching the provided keyword.
+
+  1. Prerequisites: List all patrons using the `book list` command. Ensure that there is at least one book whose tags matching the word "Romance".
+
+  2. Test case: `book find t/Romance`
+     Expected: Book list displays all books with tags matching the word "Romance".
 
 <div style="page-break-after: always;"></div>
 
