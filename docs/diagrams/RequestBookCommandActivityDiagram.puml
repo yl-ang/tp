@@ -1,7 +1,7 @@
 @startuml
 start
 :User enters request command;
-if () then ([return date is valid format])
+if () then ([valid format])
     :Parser parses book index, and requester index;
         :Logic executes command;
         if () then ([valid indexes])

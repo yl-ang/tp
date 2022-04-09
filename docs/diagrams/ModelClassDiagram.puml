@@ -69,10 +69,10 @@ Address -[hidden]right-> Email
 
 LibTask *--> "1" BookList
 BookList --> "~* " Book
-Book *--> "0..3" Patron : requested by >
-Book *--> "*" Author
-Book *--> "1" BookName
-Book *--> "1" Isbn
+Book *--> "*" Patron : requested by >
+Book *-up> "*" Author
+Book *-right> "1" BookName
+Book *-down> "1" Isbn
 Book *--> "1" BookStatus
 Book *--> "*" Tag
 BookStatus --> "0..1" Patron
@@ -81,11 +81,12 @@ BookStatus --> "1" "<<enum>>\nBookStatusType"
 Name -[hidden]right-> Id
 Id -[hidden]right-> Address
 Address -[hidden]right-> Email
-BookStatus -[hidden]right-> Isbn
-Isbn -[hidden]right-> Author
+BookStatus -[hidden]right->"<<enum>>\nBookStatusType"
+"<<enum>>\nBookStatusType" -[hidden]right-> Isbn
+
 Author -[hidden]right-> BookName
 BookStatus -[hidden]up->Patron
-BookStatus -[hidden]right->"<<enum>>\nBookStatusType"
+
 
 ModelManager -->"~* " Patron : contains filtered >
 ModelManager -->"~* " Book : contains filtered >
