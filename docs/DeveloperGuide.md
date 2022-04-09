@@ -161,8 +161,6 @@ Classes used by multiple components are in the `seedu.addressbook.commons` packa
 
 --------------------------------------------------------------------------------------------------------------------
 
-<div style="page-break-after: always;"></div>
-
 ## **Implementation**
 
 This section describes some noteworthy details on how certain features are implemented.
@@ -176,8 +174,6 @@ The class diagram for the `Model` can be seen above in the [Model component sect
 ![ModelImplementation.png](images/ModelImplementation.png)
 
 `Book` and `Patron` both have their own set of attributes, but only the most important ones are shown in the diagram above. `Book` refers a set of `Patron` objects as `requesters`. It also has a `BookStatus` containing an optional `Patron` representing the borrower of the book.
-
-<div style="page-break-after: always;"></div>
 
 #### Design considerations
 
