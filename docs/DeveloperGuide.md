@@ -360,12 +360,16 @@ Given below is an example usage scenario and how the request mechanism behaves a
 8. `RequestBookCommand` calls `Model#addRequest()` to add the book request to all book copies with the same isbn as the requested book.
 9. Finally, `RequestBookCommand` creates a `CommandResult` and returns it to `LogicManager` to complete the command.
 
+<div style="page-break-after: always;"></div>
+
 The following sequence diagram shows how the request command works:
 
 <img src="images/RequestBookCommandSequenceDiagram.png" width="850" />
 
 <div markdown="span" class="alert alert-info">:information_source: **Note:** The lifeline for `BookCommandParser` and `RequestBookCommandParser` should end at the destroy marker (X) but due to a limitation of PlantUML, the lifeline reaches the end of diagram.
 </div>
+
+<div style="page-break-after: always;"></div>
 
 The following activity diagram summarizes what happens when a user executes a request command:
 
@@ -818,6 +822,8 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
 --------------------------------------------------------------------------------------------------------------------
 
+<div style="page-break-after: always;"></div>
+
 **UC08: Edit a book on LibTask**
 
 **MSS**
@@ -978,6 +984,8 @@ Use case ends.
 
 --------------------------------------------------------------------------------------------------------------------
 
+<div style="page-break-after: always;"></div>
+
 **UC13: Show previously run commands**
 
 **MSS**
@@ -1023,6 +1031,8 @@ Extension
   Use case ends
 
 --------------------------------------------------------------------------------------------------------------------
+
+<div style="page-break-after: always;"></div>
 
 **UC15: List patrons with overdue books**
 
