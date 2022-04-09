@@ -333,8 +333,6 @@ Format: `patron find KEYWORD [KEYWORD]…​`
 
 </div>
 
-<div style="page-break-after: always;"></div>
-
 **Example:**
 
 To find all patrons with names containing the keywords "alex" or "david", you can enter the following command:
