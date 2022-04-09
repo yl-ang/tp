@@ -57,6 +57,8 @@ For example, the `Logic` component defines its API in the `Logic.java` interface
 
 <img src="images/ComponentManagers.png" width="300" />
 
+<div style="page-break-after: always;"></div>
+
 **How the architecture components interact with each other**
 
 The Sequence Diagram below shows how the components interact with each other for the scenario where the user issues the command `patron delete 1`.
@@ -136,15 +138,11 @@ The `Model` component,
 * stores a `UserPref` object that represents the user’s preferences. This is exposed to the outside as a `ReadOnlyUserPref` objects.
 * does not depend on any of the other three components (as the `Model` represents data entities of the domain, they should make sense on their own without depending on other components)
 
-<div style="page-break-after: always;"></div>
-
 <div markdown="span" class="alert alert-info">:information_source: **Note:** An alternative (arguably, a more OOP) model is given below. It has a `Tag` list in the `LibTask`, which `Patron` references. This allows `LibTask` to only require one `Tag` object per unique tag, instead of each `Patron` needing their own `Tag` objects.<br>
 
 <img src="images/BetterModelClassDiagram.png" width="600" />
 
 </div>
-
-<div style="page-break-after: always;"></div>
 
 ### Storage component
 
@@ -366,16 +364,12 @@ Given below is an example usage scenario and how the request mechanism behaves a
 8. `RequestBookCommand` calls `Model#addRequest()` to add the book request to all book copies with the same isbn as the requested book.
 9. Finally, `RequestBookCommand` creates a `CommandResult` and returns it to `LogicManager` to complete the command.
 
-<div style="page-break-after: always;"></div>
-
 The following sequence diagram shows how the request command works:
 
 <img src="images/RequestBookCommandSequenceDiagram.png" width="850" />
 
 <div markdown="span" class="alert alert-info">:information_source: **Note:** The lifeline for `BookCommandParser` and `RequestBookCommandParser` should end at the destroy marker (X) but due to a limitation of PlantUML, the lifeline reaches the end of diagram.
 </div>
-
-<div style="page-break-after: always;"></div>
 
 The following activity diagram summarizes what happens when a user executes a request command:
 
