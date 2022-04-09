@@ -1396,24 +1396,24 @@ testers are expected to do more *exploratory* testing.
 
 1. Searching for books based on their titles while there are books with titles matching the provided keywords.
 
-  1. Prerequisites: List all books using the `book list` command. Ensure that there is one book whose title contains the word "Harry".
+   1. Prerequisites: List all books using the `book list` command. Ensure that there is one book whose title contains the word "Harry".
 
-  2. Test case: `book find n/Harry`
-     Expected: Book list displays the book with title containing the word "Harry". Status message shows 1 book listed.
+   2. Test case: `book find n/Harry`
+      Expected: Book list displays the book with title containing the word "Harry". Status message shows 1 book listed.
 
 2. Searching for books based on their authors while there are books with authors matching the provided keywords.
 
-  1. Prerequisites: List all books using the `book list` command. Ensure that there is one book with at least one author whose name contains the word "Suzanne".
+   1. Prerequisites: List all books using the `book list` command. Ensure that there is one book with at least one author whose name contains the word "Suzanne".
 
-  2. Test case: `book find a/Suzanne`
-     Expected: Book list displays the book with at least one authors whose name contains the word "Suzanne". Status message shows 1 book listed.
+   2. Test case: `book find a/Suzanne`
+      Expected: Book list displays the book with at least one authors whose name contains the word "Suzanne". Status message shows 1 book listed.
 
 3. Searching for books based on their tags while there are books with tags matching the provided keyword.
 
-  1. Prerequisites: List all books using the `book list` command. Ensure that there is one book with at least one tag matching the word "Romance".
+   1. Prerequisites: List all books using the `book list` command. Ensure that there is one book with at least one tag matching the word "Romance".
 
-  2. Test case: `book find t/Romance`
-     Expected: Book list displays the books with at least one tag matching the word "Romance". Status message shows 1 book listed.
+   2. Test case: `book find t/Romance`
+      Expected: Book list displays the books with at least one tag matching the word "Romance". Status message shows 1 book listed.
 
 <div style="page-break-after: always;"></div>
 
@@ -1430,6 +1430,8 @@ Another challenge is that the use case of LibTask also requires that all books w
 **Invariant 1**: If a book has same isbn as another book, then both books must have the same name, and same set of authors.
 
 The method used to maintain such invariants is discussed in the next section.
+
+<div style="page-break-after: always;"></div>
 
 ### Elimination of Data Inconsistency
 
