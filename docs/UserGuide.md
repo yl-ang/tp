@@ -76,7 +76,7 @@ The various GUI components of LibTask are described in the picture below:
 
 1. Remove existing sample data from LibTask's patron and book lists by entering the `clear` command in the Command Box.
 
-<div markdown="block" class="alert alert-info">
+<div markdown="block" class="alert alert-warning">
 
 **:exclamation: Warning:**<br>
 
@@ -229,7 +229,7 @@ Format: `help`
 
 #### 3.1.2. Clearing all entries : `clear`
 
-<div markdown="block" class="alert alert-info">
+<div markdown="block" class="alert alert-Warning">
 
 **:exclamation: Warning:**<br>
 
