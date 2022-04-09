@@ -37,8 +37,6 @@ For a list of frequently asked questions about LibTask, you can refer to our [FA
 
 If you are an advanced user, you can refer to our [Command summary](#5-command-summary) section.
 
-For the glossary of content, you can refer to our [Glossary](#7-glossary) section.
-
 --------------------------------------------------------------------------------------------------------------------
 
 <div style="page-break-after: always;"></div>
