@@ -18,14 +18,14 @@ LibTask is a **desktop application for librarians** to manage book loans and req
 As a school librarian of a large library, you may already have your own desktop library software. However, existing library software are GUI-based and slow to work with. If you prefer to work with CLI commands efficiently while still having the benefits of aesthetic displays, then LibTask is designed just for you! LibTask provides you with a well packaged system of commands for managing book loans and book requests by your patrons. With LibTask, you can quickly process borrowing and returning of books by simply typing a few commands. The system also maintains two independent lists of books and patrons, allowing you to perform queries more efficiently.
 
 ### 1.2. About the User Guide
-The purpose of this guide is to explain to you how to use **LibTask** and to allow you to have an enjoyable experience. It explains the features and commands compatible with LibTask.  It is also structured in a way that lets you easily navigate to relevant sections based on your level of experience with LibTask.
+The purpose of this guide is to explain to you how to use **LibTask** and to allow you to have an enjoyable experience. It explains the features and commands compatible with LibTask. It is also structured in a way that lets you easily navigate to relevant sections based on your level of experience with LibTask.
 
 Take note of following symbols that are used in this document:
 
-| Icon                 | Explanation                                                                             |
-|----------------------|-----------------------------------------------------------------------------------------|
-| :information_source: | This symbol is used to highlight extra knowledge.                                       |
-| :exclamation:        | This symbol is used to warn users of potential actions that might erase LibTask's data. |
+| Icon                 | Explanation                                                                   |
+|----------------------|-------------------------------------------------------------------------------|
+| :information_source: | This symbol is used to highlight important information.                       |
+| :exclamation:        | This symbol is used to warn users of actions that might erase LibTask's data. |
 
 ### 1.3. Navigating the User Guide
 
