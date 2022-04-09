@@ -426,6 +426,8 @@ To list all patrons with overdue books, you can enter the overdue command with t
 
 Format: `patron overdue`
 
+<div style="page-break-after: always;"></div>
+
 **Example:**
 
 Before entering the command, all patrons are displayed.
@@ -783,8 +785,6 @@ This command is typically used after `patron overdue` command. After listing all
 
 --------------------------------------------------------------------------------------------------------------------
 
-<div style="page-break-after: always;"></div>
-
 ## **4. FAQ**
 
 **Q1**: Is there any other way to exit the application without typing?<br>
@@ -870,8 +870,6 @@ The checksum for an 10-digit ISBN of 0-306-40615-2 is calculated as follows:
 `checksum = (0 × 10) + (3 × 9) + (0 × 8) + (6 × 7) + (4 × 6) + (0 × 5) + (6 × 4) + (1 × 3) + (5 × 2) + (2 × 1) = 132 `
 
 Since 132 is a multiple of 11, the above 10-digit ISBN has a valid checksum.
-
-<div style="page-break-after: always;"></div>
 
 #### 13-digit ISBN checksum
 
