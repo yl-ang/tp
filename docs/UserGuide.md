@@ -849,6 +849,8 @@ to manually input additional commands to delete the "requested by" tags.
 
 --------------------------------------------------------------------------------------------------------------------
 
+<div style="page-break-after: always;"></div>
+
 ## **6. Appendix**
 
 ### 6.1. Calculating ISBN checksum
