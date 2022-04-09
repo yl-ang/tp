@@ -39,6 +39,8 @@ If you are an advanced user, you can refer to our [Command summary](#5-command-s
 
 For the glossary of content, you can refer to our [Glossary](#7-glossary) section.
 
+--------------------------------------------------------------------------------------------------------------------
+
 <div style="page-break-after: always;"></div>
 
 ## **2. Quick start**
@@ -125,6 +127,8 @@ to doing this tutorial.
 
    **`patron add n/Christian Grey s/A0123345L p/91214567 e/christian@u.nus.edu`**: Adds a patron named `Christian Grey` 
       into LibTask's patron list.
+
+--------------------------------------------------------------------------------------------------------------------
 
 #### Step 2: Borrow some books
 
@@ -268,6 +272,8 @@ Format: `u`
 #### 3.1.5. Saving LibTask's data
 
 LibTask's data is saved in the hard disk automatically after any command that changes it. There is no need to save manually.
+
+--------------------------------------------------------------------------------------------------------------------
 
 <div style="page-break-after: always;"></div>
 
