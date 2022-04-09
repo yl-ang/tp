@@ -455,8 +455,6 @@ The following sequence diagram shows how the request command works:
 <div markdown="span" class="alert alert-info">:information_source: **Note:** The lifeline for `BookCommandParser` and `FindBookCommandParser` should end at the destroy marker (X) but due to a limitation of PlantUML, the lifeline reaches the end of diagram.
 </div>
 
-<div style="page-break-after: always;"></div>
-
 The following activity diagram summarizes what happens when a user executes a request command:
 
 <img src="images/FindBookCommandActivityDiagram.png" width="650" />
@@ -510,9 +508,6 @@ Step 4. The user now decides that adding the patron was a mistake, and decides t
 
 </div>
 
-<div style="page-break-after: always;"></div>
-
-
 The following sequence diagram shows how the undo operation works:
 
 ![UndoSequenceDiagram](images/UndoSequenceDiagram.png)
@@ -528,7 +523,6 @@ The `redo` command does the opposite — it calls `Model#redoLibTask()`, whi
 </div>
 
 <div style="page-break-after: always;"></div>
-
 
 Step 5. The user then decides to execute the command `list`. Commands that do not modify the LibTask, such as `list`, will usually not call `Model#commitLibTask()`, `Model#undoLibTask()` or `Model#redoLibTask()`. Thus, the `libTaskStateList` remains unchanged.
 
@@ -682,9 +676,6 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 --------------------------------------------------------------------------------------------------------------------
 
 
-<div style="page-break-after: always;"></div>
-
-
 **UC03: Editing a patron on LibTask**
 
 **MSS**
@@ -719,7 +710,6 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
 --------------------------------------------------------------------------------------------------------------------
 
-
 <div style="page-break-after: always;"></div>
 
 
@@ -748,9 +738,6 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
   Use case ends.
 
 --------------------------------------------------------------------------------------------------------------------
-
-
-<div style="page-break-after: always;"></div>
 
 
 **UC05: Delete a patron from LibTask**
@@ -877,10 +864,6 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
 --------------------------------------------------------------------------------------------------------------------
 
-
-<div style="page-break-after: always;"></div>
-
-
 **UC09: Find books on LibTask**
 
 **MSS**
@@ -912,9 +895,6 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
 
 --------------------------------------------------------------------------------------------------------------------
-
-
-<div style="page-break-after: always;"></div>
 
 
 **UC10: Delete Book from LibTask**
