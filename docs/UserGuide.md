@@ -10,6 +10,8 @@ LibTask is a **desktop application for librarians** to manage book loans and req
 
 --------------------------------------------------------------------------------------------------------------------
 
+<div style="page-break-after: always;"></div>
+
 ## **1. Introduction**
 
 ### 1.1. Welcome to LibTask
