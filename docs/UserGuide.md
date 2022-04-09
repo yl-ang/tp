@@ -163,9 +163,9 @@ Christian Grey wishes to borrow Death on the Nile however, the book seems to be 
 two following ways:
 
 Method A:
-1. Scroll through the patron list to find the index at which `Christian Grey` is stored in LibTask. Let's say this index
+1. List all patrons in the patron list by entering `patron list`. Scroll through the patron list to find the index at which `Christian Grey` is stored in LibTask. Let's say this index
    number is 5.
-2. Scroll through the book list to find the index at which `Death on the Nile` is stored in LibTask. Let's say this
+2. List all books in the book list by entering `book list`. Scroll through the book list to find the index at which `Death on the Nile` is stored in LibTask. Let's say this
    index number is 5.
 3. Enter command `book request 5 5` in the Command Box. `Christian Grey` has now requested for `Death on the Nile`. You can 
    confirm this by viewing the book's status in the book list.
@@ -618,7 +618,7 @@ To edit the details of a specific book, you can enter the edit command with the 
 
 * Edits the book at the specified `INDEX`. `INDEX` refers to the index number shown in the displayed book list. The index **must be a positive integer** 1, 2, 3, … and cannot exceed the largest index number in the displayed book list.
 
-* At least one of the optional fields (ISBN, AUTHOR, CATEGORY_TAG) must be provided.
+* At least one of the optional fields (NAME, ISBN, AUTHOR, CATEGORY_TAG) must be provided.
 
 * Existing values will be updated to the input values.
 
