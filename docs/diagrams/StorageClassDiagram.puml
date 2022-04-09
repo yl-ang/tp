@@ -18,7 +18,7 @@ package "LibTask Storage" #F4F6F6{
 Class "<<interface>>\nLibTaskStorage" as LibTaskStorage
 Class JsonLibTaskStorage
 Class JsonSerializableLibTask
-Class JsonAdaptedPerson
+Class JsonAdaptedPatron
 Class JsonAdaptedTag
 Class JsonAdaptedBook
 Class JsonAdaptedBookStatus
@@ -40,13 +40,13 @@ Storage -right-|> LibTaskStorage
 JsonUserPrefsStorage .up.|> UserPrefsStorage
 JsonLibTaskStorage .up.|> LibTaskStorage
 JsonLibTaskStorage ..> JsonSerializableLibTask
-JsonSerializableLibTask ---> "*" JsonAdaptedPerson
+JsonSerializableLibTask ---> "*" JsonAdaptedPatron
 JsonSerializableLibTask --> "*" JsonAdaptedBook
-JsonAdaptedPerson --> "*" JsonAdaptedTag
+JsonAdaptedPatron --> "*" JsonAdaptedTag
 JsonAdaptedBook --> "*" JsonAdaptedAuthor
 JsonAdaptedBook --> "1" JsonAdaptedBookStatus
-JsonAdaptedBook --> "0..3" JsonAdaptedPerson : requested by >
-JsonAdaptedBookStatus -> "0..1" JsonAdaptedPerson : borrowed by >
+JsonAdaptedBook --> "*" JsonAdaptedPatron : requested by >
+JsonAdaptedBookStatus -> "0..1" JsonAdaptedPatron : borrowed by >
 
 JsonAdaptedBookStatus -[hidden]left-JsonAdaptedAuthor
 @enduml

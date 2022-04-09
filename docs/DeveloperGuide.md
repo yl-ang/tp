@@ -126,7 +126,7 @@ How the parsing works:
 ### Model component
 **API** : [`Model.java`](https://github.com/AY2122S2-CS2103T-W14-1/tp/blob/master/src/main/java/seedu/address/model/Model.java)
 
-<img src="images/ModelClassDiagram.png" width="650" />
+<img src="images/ModelClassDiagram2.png" width="650" />
 
 
 The `Model` component,
@@ -171,13 +171,13 @@ This section describes some noteworthy details on how certain features are imple
 
 ### Model
 
-The class diagram for the `Model` can be seen above in the [Design section](#model-component). Model contains two main object components, `Book` and `Patron`, with `Book` having a dependency on `Patron`. Such a design was chosen after a few iterations on other designs. The final design is documented here:
+The class diagram for the `Model` can be seen above in the [Model component section](#model-component). Model contains two main object components, `Book` and `Patron`, with `Book` having a dependency on `Patron`. Such a design was chosen after a few iterations on other designs. The final design is documented here:
 
 #### Implementation details
 
 ![ModelImplementation.png](images/ModelImplementation.png)
 
-`Book` has a set of `Patron`s both have their own set of attributes, but only the most important ones are shown here. `Book` has a set of `Patron`s as `requesters`. It also has a `BookStatus` containing an optional `Patron` representing the borrower of the book.
+`Book` and `Patron` both have their own set of attributes, but only the most important ones are shown in the diagram above. `Book` refers a set of `Patron` objects as `requesters`. It also has a `BookStatus` containing an optional `Patron` representing the borrower of the book.
 
 <div style="page-break-after: always;"></div>
 

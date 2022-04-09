@@ -18,7 +18,7 @@ Patron -up-> "*" Tag
 Book -down-> "*" Tag
 
 Book *-right-> "1" BookName
-Book *-down-> "1" Author
+Book *-down-> "*" Author
 Book *-down-> "1" Isbn
 Book *-down-> "1" BookStatus
 BookStatus -right-> "1" "<<enum>>\nBookStatusType"
@@ -27,7 +27,7 @@ Tag -[hidden]right- Author
 Author -[hidden]right- BookStatus
 "<<enum>>\nBookStatusType" -[hidden]right- Isbn
 BookStatus --> "0..1" Patron
-Book --> "0..3" Patron
+Book --> "*" Patron
 
 Patron *--> "1" Name
 Patron *--> "1" Phone
