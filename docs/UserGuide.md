@@ -29,7 +29,7 @@ Take note of following symbols that are used in this document:
 
 ### 1.3. Navigating the User Guide
 
-For help with installing LibTask and understanding our interface, you can head over to our [Quick start](#2-quick-start) section.
+For help with installing and understanding LibTask's GUI, you can head over to our [Quick start](#2-quick-start) section.
 
 For the full documentation of each feature, you can refer to our [Features](#3-features) section.
 
