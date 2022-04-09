@@ -420,13 +420,13 @@ To delete the second patron, you can enter the following command:
 
 `patron delete 2`
 
+<div style="page-break-after: always;"></div>
+
 #### 3.2.6. Listing all patrons with overdue books : `patron overdue`
 
 To list all patrons with overdue books, you can enter the overdue command with the format shown below.
 
 Format: `patron overdue`
-
-<div style="page-break-after: always;"></div>
 
 **Example:**
 
@@ -880,8 +880,6 @@ Since 132 is a multiple of 11, the above 10-digit ISBN has a valid checksum.
 * Step 2. After obtaining the product of digit and weight for each digit, sum all the products.
 
 * Step 3. The 13-digit ISBN checksum is valid if the sum of products is a multiple of 10.
-
-<div style="page-break-after: always;"></div>
 
 **Example:**
 
