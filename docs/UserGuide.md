@@ -128,8 +128,6 @@ to doing this tutorial.
    **`patron add n/Christian Grey s/A0123345L p/91214567 e/christian@u.nus.edu`**: Adds a patron named `Christian Grey` 
       into LibTask's patron list.
 
---------------------------------------------------------------------------------------------------------------------
-
 #### Step 2: Borrow some books
 
 Harper Lee wishes to borrow Death on the Nile. You may create a book loan for her in one of the two following ways:
@@ -197,6 +195,8 @@ notify Christian Grey that the book is now available.
 
 </div>
 
+--------------------------------------------------------------------------------------------------------------------
+
 <div style="page-break-after: always;"></div>
 
 ## **3. Features**
@@ -229,8 +229,6 @@ This section describes the features supported by LibTask and how to use them.
 ### 3.1. General Features
 
 This section describes features users can use to navigate through LibTask.
-
---------------------------------------------------------------------------------------------------------------------
 
 #### 3.1.1. Viewing help : `help`
 
@@ -273,15 +271,12 @@ Format: `u`
 
 LibTask's data is saved in the hard disk automatically after any command that changes it. There is no need to save manually.
 
---------------------------------------------------------------------------------------------------------------------
-
 <div style="page-break-after: always;"></div>
 
 ### 3.2. Patron Features
 
 This section describes features users can use to interact with LibTask's patron list.
 
---------------------------------------------------------------------------------------------------------------------
 #### 3.2.1. Adding a patron: `patron add`
 Adds a patron to LibTask's patron list.
 
@@ -472,8 +467,6 @@ After entering the command, only patrons with overdue books are displayed.
 ### 3.3. Book Features
 
 This section describes features users can use to interact with LibTask's book list.
-
---------------------------------------------------------------------------------------------------------------------
 
 #### 3.3.1. Adding a book: `book add`
 Adds a book to LibTask's book list.
@@ -867,6 +860,7 @@ patrons and books in the database.
 to remind the patrons that have requested the book. The purpose of the automatic deletion of the "requested by" tag is
 a feature that is meant to provide convenience for the user and make them more productive because they would not need
 to manually input additional commands to delete the "requested by" tags.
+
 --------------------------------------------------------------------------------------------------------------------
 
 ## **5. Command summary**
@@ -907,6 +901,8 @@ to manually input additional commands to delete the "requested by" tags.
 | **Request a book**                     | `book request PATRON_INDEX BOOK_INDEX`                              |
 | **List all books related to a patron** | `book related INDEX`                                                |
 
+--------------------------------------------------------------------------------------------------------------------
+
 ## **6. Appendix**
 
 ### 6.1. Calculating ISBN checksum
@@ -946,6 +942,8 @@ The checksum for an 13-digit ISBN of 978-0-306-40615-7 is calculated as follows:
 `checksum = (9 × 1) + (7 × 3) + (8 × 1) + (0 × 3) + (3 × 1) + (0 × 3) + (6 × 1) + (4 × 3) + (0 × 1) + (6 × 3) + (1 × 1) + (5 × 3) + (7 × 1) = 100`
 
 Since 100 is a multiple of 10, the above 13-digit ISBN has a valid checksum.
+
+--------------------------------------------------------------------------------------------------------------------
 
 ## **7. Glossary**
 
