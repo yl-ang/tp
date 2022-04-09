@@ -374,6 +374,8 @@ Before entering the command, the first patron still has its original name, phone
 
 ![patron-edit-1](images/patron-edit-11.png)
 
+<div style="page-break-after: always;"></div>
+
 After entering the command, the first patron has its name edited to `John Cena`, phone number edited to `91959491` and email edited to `johncena@u.nus.edu`
 
 ![patron-edit-2](images/patron-edit-21.PNG)
