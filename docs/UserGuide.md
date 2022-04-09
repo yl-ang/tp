@@ -305,7 +305,6 @@ Format: `patron list`
 **:information_source: Notes about the list command:**<br>
 
 * If all patrons are already listed, the command will still show a success message as having listed all patrons, but the patrons listed will have no visual change.
-
 </div>
 
 **Example:** `patron list`
