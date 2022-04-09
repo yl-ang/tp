@@ -119,7 +119,17 @@ to doing this tutorial.
 
 #### Step 2: Borrow some books
 
-Harper Lee wishes to borrow "The Da Vinci Code". You may create a book loan for her in one of the two following ways:
+Harper Lee wishes to borrow "The Da Vinci Code".You may create a book loan for her in one of the two following ways:
+
+<div markdown="block" class="alert alert-info">
+
+**:information_source: Notes:**<br>
+
+* The return dates of the above `borrow` commands may be changed.
+
+* Learn more about the `borrow` command [here](#336-borrowing-a-book--borrow).
+
+</div>
 
 Method A:
 1. Scroll through the patron list to find the index at which `Harper Lee` is stored in LibTask. Let's say this index 
@@ -137,16 +147,6 @@ Method B:
 3. Enter command `borrow 1 1 25-Apr-2022` in the Command box. `Harper Lee` has now borrowed `The Da Vinci Code` with a 
    return date of 25th April 2022. You can confirm this by viewing the book's status in the book list.
 
-<div markdown="block" class="alert alert-info">
-
-**:information_source: Notes:**<br>
-
-* The return dates of the above `borrow` commands may be changed.
-
-* Learn more about the `borrow` command [here](#336-borrowing-a-book--borrow).
-
-</div>
-
 <div style="page-break-after: always;"></div>
 
 #### Step 3: Creating book requests
@@ -154,6 +154,16 @@ Method B:
 Bob Miller wishes to borrow "The Da Vinci Code". However, the book seems to be borrowed by Harper Lee when the command 
 `book find n/The Da Vinci Code` is run. In this case and similar scenarios, you can create a book request in one of the 
 two following ways:
+
+<div markdown="block" class="alert alert-info">
+
+**:information_source: Notes:**<br>
+
+* Multiple patrons may request for `The Da Vinci Code` in which case, `Result box` would remind you to notify all of them once the book is returned.
+
+* Learn more about the request command [here](#338-requesting-a-book--book-request).
+
+</div>
 
 Method A:
 1. Scroll through the patron list to find the index at which `Bob Miller` is stored in LibTask. Let's say this index
@@ -175,16 +185,6 @@ Subsequently, when Harper Lee returns "The Da Vinci Code", find the book by ente
 (which would result in it being displayed first) followed by `return b/1` (more about the `return` command 
 [here](#337-returning-a-book--return)). `The Da Vinci Code` is hence returned and the `Result box` would prompt you to 
 notify Bob Miller that the book is now available.
-
-<div markdown="block" class="alert alert-info">
-
-**:information_source: Notes:**<br>
-
-* Multiple patrons may request for `The Da Vinci Code` in which case, `Result box` would remind you to notify all of them once the book is returned.
-
-* Learn more about the request command [here](#338-requesting-a-book--book-request).
-
-</div>
 
 --------------------------------------------------------------------------------------------------------------------
 
