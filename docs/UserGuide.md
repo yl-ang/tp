@@ -15,7 +15,7 @@ LibTask is a **desktop application for librarians** to manage book loans and req
 ## **1. Introduction**
 
 ### 1.1. Welcome to LibTask
-As a school librarian of a large library, you may already have your own desktop library software. However, existing library software is GUI-based and slow to work with. If you prefer to work with CLI commands efficiently while still having the benefits of aesthetic displays, then LibTask is designed just for you! LibTask provides you with a well-packaged system of commands for managing book loans and book requests by your patrons. With LibTask, you can quickly process the borrowing and returning of books by simply typing a few commands. The system also maintains two independent lists of books and patrons, allowing you to perform queries more efficiently.
+As a school librarian of a large library, you may already have your own desktop library software. However, existing library software is GUI-based and slow to work with. If you prefer to work with CLI commands efficiently while still having the benefits of aesthetic displays, then LibTask is designed just for you! LibTask provides you with a well-packaged system of commands for managing book loans and book requests by your patrons. The system also maintains two independent lists of books and patrons, allowing you to perform queries more efficiently.
 
 ### 1.2. About the User Guide
 The purpose of this guide is to explain to you how to use **LibTask** and to allow you to have an enjoyable experience. It explains the features and commands compatible with LibTask. It is also structured in a way to let you easily navigate to relevant sections.
@@ -28,7 +28,6 @@ Take note of following symbols that are used in this document:
 | :exclamation:        | This symbol is used to warn users of actions that might erase LibTask's data. |
 
 ### 1.3. Navigating the User Guide
-
 For help with installing and understanding LibTask's GUI, you can head over to our [Quick start](#2-quick-start) section.
 
 For the full documentation of each feature, you can refer to our [Features](#3-features) section.
