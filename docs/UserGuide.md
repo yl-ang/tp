@@ -339,14 +339,6 @@ To find all patrons with names containing the keywords "alex" or "david", you ca
 
 `patron find alex david`
 
-Before entering the command, all patrons are displayed.
-
-![patron-find-1](images/patron-find-1.png)
-
-After entering the command, only patrons with names containing "alex" or "david" are displayed.
-
-![patron-find-2](images/patron-find-2.png)
-
 <div style="page-break-after: always;"></div>
 
 #### 3.2.4. Editing a patron : `patron edit`
