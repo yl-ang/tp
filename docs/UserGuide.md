@@ -304,18 +304,6 @@ you can enter the following command:
 
 `patron add n/John s/A0212828X p/93231222 e/e03482@u.nus.edu t/student`
 
-<div style="page-break-after: always;"></div>
-
-Before entering the command, the above patron does not exist in LibTask.
-
-![patron-add-1](images/patron-add-1.png)
-
-After entering the command, the new patron is added.
-
-![patron-add-2](images/patron-add-2.png)
-
-<div style="page-break-after: always;"></div>
-
 #### 3.2.2. Listing all patrons : `patron list`
 
 To show a list of all patrons in LibTask, you can enter the list command with the format shown below.
@@ -332,15 +320,7 @@ Format: `patron list`
 
 **Example:** `patron list`
 
-Before entering the command only two patrons are listed.
-
-![patron-list-1](images/patron-list-1.png)
-
 <div style="page-break-after: always;"></div>
-
-After entering the command, all patrons will be listed.
-
-![patron-list-2](images/patron-list-2.png)
 
 #### 3.2.4. Finding patrons: `patron find`
 
@@ -463,16 +443,6 @@ To delete the second patron, you can enter the following command:
 
 `patron delete 2`
 
-Before entering the command, the second patron in LibTask is `Bernice Yu`.
-
-![patron-delete-1](images/patron-delete-1.png)
-
-<div style="page-break-after: always;"></div>
-
-After entering the command, patron `Bernice Yu` is deleted.
-
-![patron-delete-2](images/patron-delete-2.png)
-
 #### 3.2.6. Listing all patrons with overdue books : `patron overdue`
 
 To list all patrons with overdue books, you can enter the overdue command with the format shown below.
@@ -555,12 +525,6 @@ To show a list of all books in LibTask, you can enter the list command with the 
 </div>
 
 **Example**: `book list`
-
-Before entering the command, only two books are listed.
-![book-list-1.png](images/book-list-1.PNG)
-
-After entering the command, all books will be listed.
-![book-list-1.png](images/book-list-2.PNG)
 
 #### 3.3.3. Finding books : `book find`
 
