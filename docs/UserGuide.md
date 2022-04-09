@@ -518,7 +518,7 @@ To find books in LibTask based on book name, author or tags, you can enter the f
 
 <div style="page-break-after: always;"></div>
 
-**Example**:
+**Examples**:
 
 To find all books for computer science students, you can enter the following command:
 
@@ -782,15 +782,9 @@ To list all books borrowed by or requested by the second patron, you can enter t
 
 `book related 2`
 
-Before entering the command, the book list displays all books in LibTask.
-![book-related-1.png](images/book-related-1.PNG)
+This command is typically used after `patron overdue` command. After listing all patrons with overdue books, you can use this command to check which books are overdue by each patron.
 
 <div style="page-break-after: always;"></div>
-
-After entering the command, the book list displays only books that are borrowed by or requested by Bernice Yu (the second patron). In this case, only one book is shown because Bernice Yu did not borrow any book, and requested for one book.
-![book-related-2.png](images/book-related-2.PNG)
-
-This command is typically used after `patron overdue` command. After listing all patrons with overdue books, you can use this command to check which books are overdue by each patron.
 
 --------------------------------------------------------------------------------------------------------------------
 
