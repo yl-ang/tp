@@ -370,8 +370,6 @@ To edit the first patron's name from `Alex Yeoh` to `John Cena`, its phone numbe
 
 `patron edit 1 n/John Cena p/91959491 e/johncena@u.nus.edu`
 
-<div style="page-break-after: always;"></div>
-
 Before entering the command, the first patron still has its original name, phone number and email.
 
 ![patron-edit-1](images/patron-edit-11.png)
@@ -379,8 +377,6 @@ Before entering the command, the first patron still has its original name, phone
 After entering the command, the first patron has its name edited to `John Cena`, phone number edited to `91959491` and email edited to `johncena@u.nus.edu`
 
 ![patron-edit-2](images/patron-edit-21.PNG)
-
-<div style="page-break-after: always;"></div>
 
 To remove all tags and edit the first patron's name from `Alex Yeoh` to `John Cena`, its phone number from `87438807` to `91959491` and email from `alexyeoh@example.com` to `johncena@u.nus.edu`you can enter the following command:
 
