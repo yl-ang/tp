@@ -5,9 +5,7 @@ title: Aditi Gupta's Project Portfolio Page
 
 ### Project: LibTask
 
-LibTask is a desktop application used by librarians to keep track of books, overdue books, and contact details of patrons who have borrowed them and those who requested them. The user interacts with it using a CLI, and it has a GUI created with JavaFX. It is written in Java, and has about 10 kLoC. This project is based on AddressBook - Level 3.
-
-Given below are my contributions to the project.
+LibTask is a desktop application used by librarians to keep track of books, overdue books, and contact details of patrons who have borrowed them and those who requested them. The user interacts with it using a CLI, and it has a GUI created with JavaFX. It is written in Java, and has about 10 kLoC. This project is based on AddressBook - Level 3. Given below are my contributions to the project.
 
 * **New Feature**:
   * Added ID attribute to patron. [\#60](https://github.com/AY2122S2-CS2103T-W14-1/tp/pull/60)
@@ -69,6 +67,4 @@ Given below are my contributions to the project.
   * Bugs reported for other teams can be found [here](https://github.com/aditi2313/ped/issues).
 
 * **Tools**:
-  * Assertions
-  * Gradle
-  * Intellij
+  * Assertions, Gradle, Intellij
