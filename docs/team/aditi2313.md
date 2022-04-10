@@ -20,7 +20,7 @@ Given below are my contributions to the project.
       * This new addition to patron's existing attributes required several precautions to be taken during implementation to:
         1. Ensure that no patron and patron feature links were broken.
         2. Maintain data integrity in writing and reading patron information to and from json files.  
-  * Added patron overdue feature to LibTask's existing patron features with tests. [\#102](https://github.com/AY2122S2-CS2103T-W14-1/tp/pull/102), (https://github.com/AY2122S2-CS2103T-W14-1/tp/pull/102)
+  * Added patron overdue feature to LibTask's existing patron features with tests. [\#102](https://github.com/AY2122S2-CS2103T-W14-1/tp/pull/102)
     * What it does:
       * Allows users to view a list of all patrons with overdue books.
     * Justification:
