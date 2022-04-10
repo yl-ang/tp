@@ -10,26 +10,25 @@ LibTask is a **desktop application for librarians** to manage book loans and req
 
 --------------------------------------------------------------------------------------------------------------------
 
+<div style="page-break-after: always;"></div>
+
 ## **1. Introduction**
 
 ### 1.1. Welcome to LibTask
-As a school librarian of a large library, you may already have your own desktop library software. However, existing library software is GUI-based and slow to work with. If you prefer to work with CLI commands efficiently while still having the benefits of aesthetic displays, then LibTask is designed just for you! LibTask provides you with a well-packaged system of commands for managing book loans and book requests by your patrons. With LibTask, you can quickly process the borrowing and returning of books by simply typing a few commands. The system also maintains two independent lists of books and patrons, allowing you to perform queries more efficiently.
+As a school librarian of a large library, you may already have your own desktop library software. However, existing library software is GUI-based and slow to work with. If you prefer to **work with CLI commands efficiently** while still having the **benefits of aesthetic displays**, then LibTask is designed just for you! LibTask provides you with a well-packaged system of commands for managing book loans and book requests by your patrons. The system also maintains two independent lists of books and patrons, allowing you to perform queries more efficiently.
 
 ### 1.2. About the User Guide
-The purpose of this guide is to explain to you how to use **LibTask** and to allow you to have an enjoyable experience. It explains the features and commands compatible with LibTask.  It is also structured in a way that lets you easily navigate to relevant sections based on your level of experience with LibTask.
-
-<div style="page-break-after: always;"></div>
+The purpose of this guide is to explain to you how to use LibTask and to allow you to have an enjoyable experience. It explains the features and commands compatible with LibTask. It is also structured in a way to let you easily navigate to relevant sections.
 
 Take note of following symbols that are used in this document:
 
-| Icon                 | Explanation                                                                             |
-|----------------------|-----------------------------------------------------------------------------------------|
-| :information_source: | This symbol is used to highlight important information.                                 |
-| :exclamation:        | This symbol is used to warn users of potential actions that might erase LibTask's data. |
+| Icon                 | Explanation                                                                   |
+|----------------------|-------------------------------------------------------------------------------|
+| :information_source: | This symbol is used to highlight important information.                       |
+| :exclamation:        | This symbol is used to warn users of actions that might erase LibTask's data. |
 
 ### 1.3. Navigating the User Guide
-
-For help with installing LibTask and understanding our interface, you can head over to our [Quick start](#2-quick-start) section.
+For help with installing and understanding LibTask's GUI, you can head over to our [Quick start](#2-quick-start) section.
 
 For the full documentation of each feature, you can refer to our [Features](#3-features) section.
 
@@ -37,7 +36,7 @@ For a list of frequently asked questions about LibTask, you can refer to our [FA
 
 If you are an advanced user, you can refer to our [Command summary](#5-command-summary) section.
 
-For the glossary of content, you can refer to our [Glossary](#7-glossary) section.
+--------------------------------------------------------------------------------------------------------------------
 
 <div style="page-break-after: always;"></div>
 
@@ -72,11 +71,11 @@ The various GUI components of LibTask are described in the picture below:
 
 ### 2.3. Tutorial
 
-#### Step 1: Setting up your patron and book database
+#### Step 1: Adding patrons and books into LibTask
 
 1. Remove existing sample data from LibTask's patron and book lists by entering the `clear` command in the Command Box.
 
-<div markdown="block" class="alert alert-info">
+<div markdown="block" class="alert alert-warning">
 
 **:exclamation: Warning:**<br>
 
@@ -85,7 +84,21 @@ to doing this tutorial.
 
 </div>
 
-2. Add some books into LibTask's book list using the `book add` command.
+2. Add some patrons into LibTask's patron list using the `patron add` command.
+
+   Below are some sample commands you can try running. You may continue adding more patrons while
+   ensuring that the format of your command follows [patron add](#321-adding-a-patron-patron-add).
+
+   `patron add n/Alice s/A0123456H p/90123212 e/profA@u.nus.edu t/professor`: Adds a patron named `Alice` into
+   LibTask's patron list.
+
+   `patron add n/Bob Miller s/A4468931X p/92940284 e/bobmiller@u.nus.edu t/student`: Adds a patron named
+   `Bob Miller` into LibTask's patron list.
+
+   `patron add n/Harper Lee s/A0988773M p/91437496 e/harperlee@u.nus.edu`: Adds a patron named `Harper Lee` into
+   LibTask's patron list.
+
+3. Add some books into LibTask's book list using the `book add` command.
 
    Below are some sample commands you can try running. You may continue adding more books while
    ensuring that the format of your command follows [book add](#331-adding-a-book-book-add).
@@ -99,99 +112,79 @@ to doing this tutorial.
    `book add n/The Da Vinci Code i/97803-85513-227 a/Dan Brown t/Thriller t/Mystery t/Crime`: Adds a book titled 
      `The Da Vinci Code` into LibTask's book list.
 
-   `book add n/The Two Towers i/97800-07203-598 a/J. R. R. Tolkein t/Action t/Fantasy t/Adventure t/Drama`: Adds a 
-      book titled `The Two Towers` into LibTask's book list.
-
-   `book add n/Death on the Nile i/97800-06168-959 a/Agatha Christie t/Mystery t/Drama t/Crime t/Thriller`: 
-      Adds a book titled `Death on the Nile` into LibTask's book list.
-
-
-3. Add some patrons into LibTask's patron list using the `patron add` command.
-
-   Below are some sample commands you can try running. You may continue adding more patrons while
-   ensuring that the format of your command follows [patron add](#321-adding-a-patron-patron-add).
-
-   `patron add n/Alice s/A0123456H p/90123212 e/profA@u.nus.edu t/professor`: Adds a patron named `Alice` into 
-      LibTask's patron list.
-
-   `patron add n/Bob Miller s/A4468931X p/92940284 e/bobmiller@u.nus.edu t/student`: Adds a patron named 
-     `Bob Miller` into LibTask's patron list.
-
-   `patron add n/Harper Lee s/A0988773M p/91437496 e/harperlee@u.nus.edu`: Adds a patron named `Harper Lee` into 
-      LibTask's patron list.
-
-   `patron add n/Jessica s/A6666789G p/90194628 e/jessica@u.nus.edu t/student`: Adds a patron named `Jessica` into 
-      LibTask's patron list.
-
-   `patron add n/Christian Grey s/A0123345L p/91214567 e/christian@u.nus.edu`: Adds a patron named `Christian Grey` 
-      into LibTask's patron list.
+<div style="page-break-after: always;"></div>
 
 #### Step 2: Borrow some books
 
-Harper Lee wishes to borrow Death on the Nile. You may create a book loan for her in one of the two following ways:
-
-Method A:
-1. Scroll through the patron list to find the index at which `Harper Lee` is stored in LibTask. Let's say this index 
-   number is 3.
-2. Scroll through the book list to find the index at which `Death on the Nile` is stored in LibTask. Let's say this 
-   index number is 5.
-3. Enter command `borrow 3 5 25-Apr-2022` in the Command box. `Harper Lee` has now borrowed `Death on the Nile` with a 
-   return date of 25th April 2022. You can confirm this by viewing the book's status in the book list.  
-
-Method B:
-1. Enter `patron find harper lee` in the Command box. Running this command will display `Harper Lee` first in the patron
-   list. Learn more about the format of the `patron find` command [here](#324-finding-patrons-patron-find).
-2. Enter `book find n/death on the nile` in the Command box. Running this command will display `Death on the Nile` first
-   in the book list. Learn more about the format of the `book find` command [here](#333-finding-books--book-find).
-3. Enter command `borrow 1 1 25-Apr-2022` in the Command box. `Harper Lee` has now borrowed `Death on the Nile` with a 
-   return date of 25th April 2022. You can confirm this by viewing the book's status in the book list.
+Harper Lee wishes to borrow "The Da Vinci Code". You may create a book loan for her in one of the two following ways:
 
 <div markdown="block" class="alert alert-info">
 
 **:information_source: Notes:**<br>
 
-* The return dates of the above `borrow` commands may be changed. 
+* The return dates of the above `borrow` commands may be changed.
 
 * Learn more about the `borrow` command [here](#336-borrowing-a-book--borrow).
 
 </div>
 
-#### Step 3: Creating book requests
-
-Christian Grey wishes to borrow Death on the Nile however, the book seems to be borrowed by Harper Lee when the command 
-`book find n/death on the nile` is run. In this case and similar scenarios, you can create a book request in one of the 
-two following ways:
-
 Method A:
-1. List all patrons in the patron list by entering `patron list`. Scroll through the patron list to find the index at which `Christian Grey` is stored in LibTask. Let's say this index
-   number is 5.
-2. List all books in the book list by entering `book list`. Scroll through the book list to find the index at which `Death on the Nile` is stored in LibTask. Let's say this
-   index number is 5.
-3. Enter command `book request 5 5` in the Command Box. `Christian Grey` has now requested for `Death on the Nile`. You can 
-   confirm this by viewing the book's status in the book list.
+1. Scroll through the patron list to find the index at which `Harper Lee` is stored in LibTask. Let's say this index 
+   number is 3.
+2. Scroll through the book list to find the index at which `The Da Vinci Code` is stored in LibTask. Let's say this 
+   index number is 3.
+3. Enter command `borrow 3 3 25-Apr-2022` in the Command box. `Harper Lee` has now borrowed `The Da Vinci Code` with a 
+   return date of 25th April 2022. You can confirm this by viewing the book's status in the book list.
 
 Method B:
-1. Enter `patron find christian grey` in the Command box. Running this command will display `Christian Grey` first in 
-   the patron list. Learn more about the format of the `patron find` command [here](#324-finding-patrons-patron-find).
-2. Enter `book find n/death on the nile` in the Command box. Running this command will display `Death on the Nile` first
+1. Enter `patron find harper lee` in the Command box. Running this command will display `Harper Lee` first in the patron 
+   list. Learn more about the format of the `patron find` command [here](#323-finding-patrons-patron-find).
+2. Enter `book find n/The Da Vinci Code` in the Command box. Running this command will display `The Da Vinci Code` first
    in the book list. Learn more about the format of the `book find` command [here](#333-finding-books--book-find).
-3. Enter command `book request 1 1` in the Command box. `Christian Grey` has now requested for `Death on the Nile`. You can
-   confirm this by viewing the book's status in the book list.
+3. Enter command `borrow 1 1 25-Apr-2022` in the Command box. `Harper Lee` has now borrowed `The Da Vinci Code` with a 
+   return date of 25th April 2022. You can confirm this by viewing the book's status in the book list.
 
-Subsequently, when Harper Lee returns Death on the Nile, find the book by entering `book find n/death on the nile` 
-(which would result in it being displayed first) followed by `return b/1` (more about the `return` command 
-[here](#337-returning-a-book--return)). `Death on the Nile` is hence returned and the `Result box` would prompt you to 
-notify Christian Grey that the book is now available. 
+<div style="page-break-after: always;"></div>
+
+#### Step 3: Creating book requests
+
+Bob Miller wishes to borrow "The Da Vinci Code". However, the book seems to be borrowed by Harper Lee when the command 
+`book find n/The Da Vinci Code` is run. In this case and similar scenarios, you can create a book request in one of the 
+two following ways:
 
 <div markdown="block" class="alert alert-info">
 
 **:information_source: Notes:**<br>
 
-* Multiple patrons may request for `Death on the Nile` in which case, `Result box` would remind you to notify all of them once the book is returned.
+* Multiple patrons may request for `The Da Vinci Code` in which case, `Result box` would remind you to notify all of them once the book is returned.
 
 * Learn more about the request command [here](#338-requesting-a-book--book-request).
 
 </div>
+
+Method A:
+1. List all patrons in the patron list by entering `patron list`. Scroll through the patron list to find the index at which `Bob Miller` is stored in LibTask. Let's say this index
+   number is 2.
+2. List all books in the book list by entering `book list`. Scroll through the book list to find the index at which `The Da Vinci Code` is stored in LibTask. Let's say this
+   index number is 3.
+3. Enter command `book request 2 3` in the Command Box. `Bob Miller` has now requested for `The Da Vinci Code`. You can confirm this by viewing the book's status in the book list.
+
+Method B:
+1. Enter `patron find Bob Miller` in the Command box. Running this command will display `Bob Miller` first in 
+   the patron list. Learn more about the format of the `patron find` command [here](#323-finding-patrons-patron-find).
+2. Enter `book find n/The Da Vinci Code` in the Command box. Running this command will display `The Da Vinci Code` first
+   in the book list. Learn more about the format of the `book find` command [here](#333-finding-books--book-find).
+3. Enter command `book request 1 1` in the Command box. `Bob Miller` has now requested for `The Da Vinci Code`. You can
+   confirm this by viewing the book's status in the book list.
+
+Subsequently, when Harper Lee returns "The Da Vinci Code", find the book by entering `book find n/The Da Vinci Code` 
+(which would result in it being displayed first) followed by `return b/1` (more about the `return` command 
+[here](#337-returning-a-book--return)). `The Da Vinci Code` is hence returned and the `Result box` would prompt you to 
+notify Bob Miller that the book is now available.
+
+**Congratulations! You have completed our tutorial!** You can now head over to our [Features](#3-features) section to learn more about our commands in greater detail.
+
+--------------------------------------------------------------------------------------------------------------------
 
 <div style="page-break-after: always;"></div>
 
@@ -220,13 +213,9 @@ This section describes the features supported by LibTask and how to use them.
 
 </div>
 
-<div style="page-break-after: always;"></div>
-
 ### 3.1. General Features
 
 This section describes features users can use to navigate through LibTask.
-
---------------------------------------------------------------------------------------------------------------------
 
 #### 3.1.1. Viewing help : `help`
 
@@ -238,7 +227,7 @@ Format: `help`
 
 #### 3.1.2. Clearing all entries : `clear`
 
-<div markdown="block" class="alert alert-info">
+<div markdown="block" class="alert alert-warning">
 
 **:exclamation: Warning:**<br>
 
@@ -275,7 +264,6 @@ LibTask's data is saved in the hard disk automatically after any command that ch
 
 This section describes features users can use to interact with LibTask's patron list.
 
---------------------------------------------------------------------------------------------------------------------
 #### 3.2.1. Adding a patron: `patron add`
 Adds a patron to LibTask's patron list.
 
@@ -297,7 +285,7 @@ Format: `patron add n/NAME s/ID p/PHONE e/EMAIL [t/TAG]…​`
 
 </div>
 
-**Example**
+**Example:**
 
 To add a patron with the name `John`, id `A0212828X`, phone number `93231222`, email `e03482@u.nus.edu` and tag `student`,
 you can enter the following command:
@@ -306,19 +294,9 @@ you can enter the following command:
 
 <div style="page-break-after: always;"></div>
 
-Before entering the command, the above patron does not exist in LibTask.
-
-![patron-add-1](images/patron-add-1.png)
-
-After entering the command, the new patron is added.
-
-![patron-add-2](images/patron-add-2.png)
-
-<div style="page-break-after: always;"></div>
-
 #### 3.2.2. Listing all patrons : `patron list`
 
-To show a list of all patrons in LibTask, you can enter the list command with the format shown below.
+To show a list of all patrons in LibTask, you can enter the list command shown below.
 
 Format: `patron list`
 
@@ -329,18 +307,6 @@ Format: `patron list`
 * If all patrons are already listed, the command will still show a success message as having listed all patrons, but the patrons listed will have no visual change.
 
 </div>
-
-**Example:** `patron list`
-
-Before entering the command only two patrons are listed.
-
-![patron-list-1](images/patron-list-1.png)
-
-<div style="page-break-after: always;"></div>
-
-After entering the command, all patrons will be listed.
-
-![patron-list-2](images/patron-list-2.png)
 
 #### 3.2.3. Finding patrons: `patron find`
 
@@ -365,21 +331,11 @@ Format: `patron find KEYWORD [KEYWORD]…​`
 
 </div>
 
-<div style="page-break-after: always;"></div>
-
 **Example:**
 
 To find all patrons with names containing the keywords "alex" or "david", you can enter the following command:
 
 `patron find alex david`
-
-Before entering the command, all patrons are displayed.
-
-![patron-find-1](images/patron-find-1.png)
-
-After entering the command, only patrons with names containing "alex" or "david" are displayed.
-
-![patron-find-2](images/patron-find-2.png)
 
 <div style="page-break-after: always;"></div>
 
@@ -413,17 +369,15 @@ To edit the first patron's name from `Alex Yeoh` to `John Cena`, its phone numbe
 
 `patron edit 1 n/John Cena p/91959491 e/johncena@u.nus.edu`
 
-<div style="page-break-after: always;"></div>
-
 Before entering the command, the first patron still has its original name, phone number and email.
 
 ![patron-edit-1](images/patron-edit-11.png)
 
+<div style="page-break-after: always;"></div>
+
 After entering the command, the first patron has its name edited to `John Cena`, phone number edited to `91959491` and email edited to `johncena@u.nus.edu`
 
 ![patron-edit-2](images/patron-edit-21.PNG)
-
-<div style="page-break-after: always;"></div>
 
 To remove all tags and edit the first patron's name from `Alex Yeoh` to `John Cena`, its phone number from `87438807` to `91959491` and email from `alexyeoh@example.com` to `johncena@u.nus.edu`you can enter the following command:
 
@@ -463,16 +417,6 @@ To delete the second patron, you can enter the following command:
 
 `patron delete 2`
 
-Before entering the command, the second patron in LibTask is `Bernice Yu`.
-
-![patron-delete-1](images/patron-delete-1.png)
-
-<div style="page-break-after: always;"></div>
-
-After entering the command, patron `Bernice Yu` is deleted.
-
-![patron-delete-2](images/patron-delete-2.png)
-
 #### 3.2.6. Listing all patrons with overdue books : `patron overdue`
 
 To list all patrons with overdue books, you can enter the overdue command with the format shown below.
@@ -496,8 +440,6 @@ After entering the command, only patrons with overdue books are displayed.
 ### 3.3. Book Features
 
 This section describes features users can use to interact with LibTask's book list.
-
---------------------------------------------------------------------------------------------------------------------
 
 #### 3.3.1. Adding a book: `book add`
 Adds a book to LibTask's book list.
@@ -554,14 +496,6 @@ To show a list of all books in LibTask, you can enter the list command with the 
 
 </div>
 
-**Example**: `book list`
-
-Before entering the command, only two books are listed.
-![book-list-1.png](images/book-list-1.PNG)
-
-After entering the command, all books will be listed.
-![book-list-1.png](images/book-list-2.PNG)
-
 #### 3.3.3. Finding books : `book find`
 
 To find books in LibTask based on book name, author or tags, you can enter the find command with the format shown below.
@@ -580,7 +514,7 @@ To find books in LibTask based on book name, author or tags, you can enter the f
 
 <div style="page-break-after: always;"></div>
 
-**Example**:
+**Examples**:
 
 To find all books for computer science students, you can enter the following command:
 
@@ -618,7 +552,7 @@ To edit the details of a specific book, you can enter the edit command with the 
 
 * Edits the book at the specified `INDEX`. `INDEX` refers to the index number shown in the displayed book list. The index **must be a positive integer** 1, 2, 3, … and cannot exceed the largest index number in the displayed book list.
 
-* At least one of the optional fields (ISBN, AUTHOR, CATEGORY_TAG) must be provided.
+* At least one of the optional fields (NAME, ISBN, AUTHOR, CATEGORY_TAG) must be provided.
 
 * Existing values will be updated to the input values.
 
@@ -670,18 +604,11 @@ To delete a specific book, you can enter the delete command with the format show
 
 </div>
 
-<div style="page-break-after: always;"></div>
-
 **Example**:
+
 To delete the first book, you can enter the following command:
 
 `book delete 1`
-
-Before entering the command, there is a copy of `Harry Potter and The Philosopher's Stone` as the first book.
-![book-delete-1.png](images/book-delete-1.PNG)
-
-After entering the command, that copy of `Harry Potter and The Philospher's Stone` is deleted.
-![book-delete-2.png](images/book-delete-2.PNG)
 
 <div style="page-break-after: always;"></div>
 
@@ -712,6 +639,7 @@ To keep track that a specific patron is borrowing a specific book, you can enter
 </div>
 
 **Example**:
+
 To keep track that the first patron is borrowing the first book until a return date of 5th May 2022, you can enter the following command:
 
 `borrow 1 1 05-May-2022`
@@ -755,6 +683,7 @@ To return a specific book, or to return all books by a specific patron, you can 
 <div style="page-break-after: always;"></div>
 
 **Examples**:
+
 To return all books borrowed by the first patron, you can enter the following command:
 
 `return p/1`
@@ -812,6 +741,7 @@ To keep track that a specific patron is requesting for a specific book, you can 
 <div style="page-break-after: always;"></div>
 
 **Example**:
+
 To keep track that the second patron is requesting for first book, you can enter the following command:
 
 `book request 2 1`
@@ -838,22 +768,19 @@ To list all books borrowed by or requested by a specific patron, you can enter t
 
 * Lists all books borrowed by or requested by a patron at `INDEX`. `INDEX` refers to the index number of the patron of interest, as shown in the displayed patron list.
 
+* `INDEX` **must be a positive integer** 1, 2, 3, …
+
+* `INDEX` cannot exceed the largest index number in the displayed patron list.
+
 * If the patron of interest did not borrow any book or request for any book, an empty book list will be shown.
 
 </div>
 
 **Example**:
+
 To list all books borrowed by or requested by the second patron, you can enter the following command:
 
 `book related 2`
-
-Before entering the command, the book list displays all books in LibTask.
-![book-related-1.png](images/book-related-1.PNG)
-
-<div style="page-break-after: always;"></div>
-
-After entering the command, the book list displays only books that are borrowed by or requested by Bernice Yu (the second patron). In this case, only one book is shown because Bernice Yu did not borrow any book, and requested for one book.
-![book-related-2.png](images/book-related-2.PNG)
 
 This command is typically used after `patron overdue` command. After listing all patrons with overdue books, you can use this command to check which books are overdue by each patron.
 
@@ -882,6 +809,7 @@ patrons and books in the database.
 to remind the patrons that have requested the book. The purpose of the automatic deletion of the "requested by" tag is
 a feature that is meant to provide convenience for the user and make them more productive because they would not need
 to manually input additional commands to delete the "requested by" tags.
+
 --------------------------------------------------------------------------------------------------------------------
 
 ## **5. Command summary**
@@ -894,8 +822,6 @@ to manually input additional commands to delete the "requested by" tags.
 | **Clear all entries**                      | `clear`        |
 | **Exit the program**                       | `exit`         |
 | **Show previous commands**                 | `u`            |
-
-<div style="page-break-after: always;"></div>
 
 ### 5.2. Patron Commands
 
@@ -921,6 +847,10 @@ to manually input additional commands to delete the "requested by" tags.
 | **Return a book**                      | `return PREFIX/INDEX`                                               |
 | **Request a book**                     | `book request PATRON_INDEX BOOK_INDEX`                              |
 | **List all books related to a patron** | `book related INDEX`                                                |
+
+--------------------------------------------------------------------------------------------------------------------
+
+<div style="page-break-after: always;"></div>
 
 ## **6. Appendix**
 
@@ -952,8 +882,6 @@ Since 132 is a multiple of 11, the above 10-digit ISBN has a valid checksum.
 
 * Step 3. The 13-digit ISBN checksum is valid if the sum of products is a multiple of 10.
 
-<div style="page-break-after: always;"></div>
-
 **Example:**
 
 The checksum for an 13-digit ISBN of 978-0-306-40615-7 is calculated as follows:
@@ -961,6 +889,8 @@ The checksum for an 13-digit ISBN of 978-0-306-40615-7 is calculated as follows:
 `checksum = (9 × 1) + (7 × 3) + (8 × 1) + (0 × 3) + (3 × 1) + (0 × 3) + (6 × 1) + (4 × 3) + (0 × 1) + (6 × 3) + (1 × 1) + (5 × 3) + (7 × 1) = 100`
 
 Since 100 is a multiple of 10, the above 13-digit ISBN has a valid checksum.
+
+--------------------------------------------------------------------------------------------------------------------
 
 ## **7. Glossary**
 
@@ -971,4 +901,6 @@ Since 100 is a multiple of 10, the above 13-digit ISBN has a valid checksum.
 | Java                                      | A programming language which was used to built LibTask.                                         |
 | International Standard Book Number (ISBN) | An international standard identification number for identifying books.                          |
 | Patron                                    | Visitor of the library.                                                                         |
-| Checksum                                  | A method to validate the ISBN                                                                   |
+| Checksum                                  | A method to validate the ISBN.                                                                  |
+
+--------------------------------------------------------------------------------------------------------------------
