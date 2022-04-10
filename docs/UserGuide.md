@@ -138,7 +138,7 @@ Method A:
 
 Method B:
 1. Enter `patron find harper lee` in the Command box. Running this command will display `Harper Lee` first in the patron 
-   list. Learn more about the format of the `patron find` command [here](#324-finding-patrons-patron-find).
+   list. Learn more about the format of the `patron find` command [here](#323-finding-patrons-patron-find).
 2. Enter `book find n/The Da Vinci Code` in the Command box. Running this command will display `The Da Vinci Code` first
    in the book list. Learn more about the format of the `book find` command [here](#333-finding-books--book-find).
 3. Enter command `borrow 1 1 25-Apr-2022` in the Command box. `Harper Lee` has now borrowed `The Da Vinci Code` with a 
@@ -171,7 +171,7 @@ Method A:
 
 Method B:
 1. Enter `patron find Bob Miller` in the Command box. Running this command will display `Bob Miller` first in 
-   the patron list. Learn more about the format of the `patron find` command [here](#324-finding-patrons-patron-find).
+   the patron list. Learn more about the format of the `patron find` command [here](#323-finding-patrons-patron-find).
 2. Enter `book find n/The Da Vinci Code` in the Command box. Running this command will display `The Da Vinci Code` first
    in the book list. Learn more about the format of the `book find` command [here](#333-finding-books--book-find).
 3. Enter command `book request 1 1` in the Command box. `Bob Miller` has now requested for `The Da Vinci Code`. You can
