@@ -10,7 +10,7 @@ LibTask is a desktop application used by librarians to keep track of books, over
 Given below are my contributions to the project.
 
 * **New Feature**:
-  * Added ID attribute to patron. [\60](https://github.com/AY2122S2-CS2103T-W14-1/tp/pull/60)
+  * Added ID attribute to patron. [\#60](https://github.com/AY2122S2-CS2103T-W14-1/tp/pull/60)
     * What it does:
       * Allows library users to register their student ID with LibTask.
     * Justification:
@@ -20,7 +20,7 @@ Given below are my contributions to the project.
       * This new addition to patron's existing attributes required several precautions to be taken during implementation to:
         1. Ensure that no patron and patron feature links were broken.
         2. Maintain data integrity in writing and reading patron information to and from json files.  
-  * Added patron overdue feature to LibTask's existing patron features with tests. [\102](https://github.com/AY2122S2-CS2103T-W14-1/tp/pull/102), (https://github.com/AY2122S2-CS2103T-W14-1/tp/pull/102)
+  * Added patron overdue feature to LibTask's existing patron features with tests. [\#102](https://github.com/AY2122S2-CS2103T-W14-1/tp/pull/102), (https://github.com/AY2122S2-CS2103T-W14-1/tp/pull/102)
     * What it does:
       * Allows users to view a list of all patrons with overdue books.
     * Justification:
@@ -44,26 +44,26 @@ Given below are my contributions to the project.
   * Created issues for PRs
 
 * **Enhancements to existing features**:
-  * Updated AB-3 person to patron through removal of person address. [\60](https://github.com/AY2122S2-CS2103T-W14-1/tp/pull/60)
-  * Adaptation of person features to match updated patron attributes. [\60](https://github.com/AY2122S2-CS2103T-W14-1/tp/pull/60)
-  * Heavy refactoring of person associated classes to accommodate for patron. [\64](https://github.com/AY2122S2-CS2103T-W14-1/tp/pull/60), [\64](https://github.com/AY2122S2-CS2103T-W14-1/tp/pull/64)
-  * Added test cases for patron features. [\102](https://github.com/AY2122S2-CS2103T-W14-1/tp/pull/102)
-  * Edited existing test cases for original person features to accommodate for patron. [\70](https://github.com/AY2122S2-CS2103T-W14-1/tp/pull/70)
+  * Updated AB-3 person to patron through removal of person address. [\#60](https://github.com/AY2122S2-CS2103T-W14-1/tp/pull/60)
+  * Adaptation of person features to match updated patron attributes. [\#60](https://github.com/AY2122S2-CS2103T-W14-1/tp/pull/60)
+  * Heavy refactoring of person associated classes to accommodate for patron. [\#64](https://github.com/AY2122S2-CS2103T-W14-1/tp/pull/60), [\#64](https://github.com/AY2122S2-CS2103T-W14-1/tp/pull/64)
+  * Added test cases for patron features. [\#102](https://github.com/AY2122S2-CS2103T-W14-1/tp/pull/102)
+  * Edited existing test cases for original person features to accommodate for patron. [\#70](https://github.com/AY2122S2-CS2103T-W14-1/tp/pull/70)
 
 * **Documentation**:
   * User Guide:
-    * Drafted tutorial steps 1, 2 and 3. [\211](https://github.com/AY2122S2-CS2103T-W14-1/tp/pull/211), [\232](https://github.com/AY2122S2-CS2103T-W14-1/tp/pull/232)
-    * Documentation (with screenshots) for new patron overdue feature [\116](https://github.com/AY2122S2-CS2103T-W14-1/tp/pull/116)
-    * Enhancements in documentation (with screenshots) for patron and book features. [\116](https://github.com/AY2122S2-CS2103T-W14-1/tp/pull/116), [\148](https://github.com/AY2122S2-CS2103T-W14-1/tp/pull/148)
+    * Drafted tutorial steps 1, 2 and 3. [\#211](https://github.com/AY2122S2-CS2103T-W14-1/tp/pull/211), [\#232](https://github.com/AY2122S2-CS2103T-W14-1/tp/pull/232)
+    * Documentation (with screenshots) for new patron overdue feature [\#116](https://github.com/AY2122S2-CS2103T-W14-1/tp/pull/116)
+    * Enhancements in documentation (with screenshots) for patron and book features. [\#116](https://github.com/AY2122S2-CS2103T-W14-1/tp/pull/116), [\#148](https://github.com/AY2122S2-CS2103T-W14-1/tp/pull/148)
 
   * Developer Guide:
-    * Product scope with target user profile and value proposition [\211](https://github.com/AY2122S2-CS2103T-W14-1/tp/pull/211)
-    * Non-functional requirements [\211](https://github.com/AY2122S2-CS2103T-W14-1/tp/pull/211)
-    * Implementation and design considerations for patron overdue feature [\211](https://github.com/AY2122S2-CS2103T-W14-1/tp/pull/211)
-    * Activity and Sequence diagrams for patron overdue feature [\211](https://github.com/AY2122S2-CS2103T-W14-1/tp/pull/211)
-    * Appendix: Instructions for manual testing for patron overdue feature [\211](https://github.com/AY2122S2-CS2103T-W14-1/tp/pull/211)
-    * Appendix: Instructions for manual testing enhancements to all book and patron features. [\232](https://github.com/AY2122S2-CS2103T-W14-1/tp/pull/232)
-    * Glossary additions [\218](https://github.com/AY2122S2-CS2103T-W14-1/tp/pull/218), [\220](https://github.com/AY2122S2-CS2103T-W14-1/tp/pull/220), [\242](https://github.com/AY2122S2-CS2103T-W14-1/tp/pull/242), [\244](https://github.com/AY2122S2-CS2103T-W14-1/tp/pull/244)
+    * Product scope with target user profile and value proposition [\#211](https://github.com/AY2122S2-CS2103T-W14-1/tp/pull/211)
+    * Non-functional requirements [\#211](https://github.com/AY2122S2-CS2103T-W14-1/tp/pull/211)
+    * Implementation and design considerations for patron overdue feature [\#211](https://github.com/AY2122S2-CS2103T-W14-1/tp/pull/211)
+    * Activity and Sequence diagrams for patron overdue feature [\#211](https://github.com/AY2122S2-CS2103T-W14-1/tp/pull/211)
+    * Appendix: Instructions for manual testing for patron overdue feature [\#211](https://github.com/AY2122S2-CS2103T-W14-1/tp/pull/211)
+    * Appendix: Instructions for manual testing enhancements to all book and patron features. [\#232](https://github.com/AY2122S2-CS2103T-W14-1/tp/pull/232)
+    * Glossary additions [\#218](https://github.com/AY2122S2-CS2103T-W14-1/tp/pull/218), [\#220](https://github.com/AY2122S2-CS2103T-W14-1/tp/pull/220), [\#242](https://github.com/AY2122S2-CS2103T-W14-1/tp/pull/242), [\#244](https://github.com/AY2122S2-CS2103T-W14-1/tp/pull/244)
 
 * **Review/mentoring contributions**:
   * PR reviewed (with non-trivial review comments): [\#20](https://github.com/AY2122S2-CS2103T-W14-1/tp/pull/20), [\#60](https://github.com/AY2122S2-CS2103T-W14-1/tp/pull/60), [\#63](https://github.com/AY2122S2-CS2103T-W14-1/tp/pull/63), [\#69](https://github.com/AY2122S2-CS2103T-W14-1/tp/pull/69), [\#72](https://github.com/AY2122S2-CS2103T-W14-1/tp/pull/72), [\#73](https://github.com/AY2122S2-CS2103T-W14-1/tp/pull/73), [\#75](https://github.com/AY2122S2-CS2103T-W14-1/tp/pull/75), [\#101](https://github.com/AY2122S2-CS2103T-W14-1/tp/pull/101), [\#108](https://github.com/AY2122S2-CS2103T-W14-1/tp/pull/108), [\#112](https://github.com/AY2122S2-CS2103T-W14-1/tp/pull/112), [\#113](https://github.com/AY2122S2-CS2103T-W14-1/tp/pull/113), [\#127](https://github.com/AY2122S2-CS2103T-W14-1/tp/pull/127), [\#129](https://github.com/AY2122S2-CS2103T-W14-1/tp/pull/129), [\#134](https://github.com/AY2122S2-CS2103T-W14-1/tp/pull/134), [\#136](https://github.com/AY2122S2-CS2103T-W14-1/tp/pull/136), [\#138](https://github.com/AY2122S2-CS2103T-W14-1/tp/pull/138), [\#139](https://github.com/AY2122S2-CS2103T-W14-1/tp/pull/139), [\#146](https://github.com/AY2122S2-CS2103T-W14-1/tp/pull/146), [\#205](https://github.com/AY2122S2-CS2103T-W14-1/tp/pull/205), [\#207](https://github.com/AY2122S2-CS2103T-W14-1/tp/pull/207), [\#208](https://github.com/AY2122S2-CS2103T-W14-1/tp/pull/208), [\#209](https://github.com/AY2122S2-CS2103T-W14-1/tp/pull/209), [\#214](https://github.com/AY2122S2-CS2103T-W14-1/tp/pull/214), [\#215](https://github.com/AY2122S2-CS2103T-W14-1/tp/pull/215), [\#222](https://github.com/AY2122S2-CS2103T-W14-1/tp/pull/222), [\#224](https://github.com/AY2122S2-CS2103T-W14-1/tp/pull/224), [\#228](https://github.com/AY2122S2-CS2103T-W14-1/tp/pull/228), [\#229](https://github.com/AY2122S2-CS2103T-W14-1/tp/pull/229), [\#235](https://github.com/AY2122S2-CS2103T-W14-1/tp/pull/235), [\#239](https://github.com/AY2122S2-CS2103T-W14-1/tp/pull/239), [\#240](https://github.com/AY2122S2-CS2103T-W14-1/tp/pull/240), [\#246](https://github.com/AY2122S2-CS2103T-W14-1/tp/pull/246), [\#251](https://github.com/AY2122S2-CS2103T-W14-1/tp/pull/251).
