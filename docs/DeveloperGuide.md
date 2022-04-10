@@ -679,7 +679,7 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 **UC03: Editing a patron on LibTask**
 
 **MSS**
-1. User list all patrons **UC02**.
+1. User <u>list all patrons UC02</u>.
 
 2. User requests to edit a patron and provide the index and the necessary details to be edited.
 
@@ -744,7 +744,7 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
 **MSS**
 
-1. User list all patrons **UC02**.
+1. User <u>list all patrons UC02</u>.
 
 2. User requests to delete a patron and provide the index.
 
@@ -918,9 +918,9 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
 **MSS**
 
-1. User lists all patrons **UC02**.
+1. User <u>lists all patrons UC02</u>.
 
-2. User lists all books **UC07**.
+2. User <u>lists all books UC07</u>.
 
 3. User requests to establish a borrow relationship and provides index of the patron and index of the book in lists, as well as return date of the book.
 
@@ -954,7 +954,7 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
 **MSS**
 
-1. User finds a patron **UC04**.
+1. User <u>finds a patron UC04</u>.
 
 2. User requests to end a borrow relationship and provides index of the patron or index of the book in lists.
 
@@ -1008,7 +1008,7 @@ Extension
 **UC14: List books related to a patron**
 
 **MSS**
-1. User lists all patrons **UC02**.
+1. User <u>lists all patrons UC02</u>.
 
 2. User requests to view all books related to a patron and provides the index of the patron in the list.
 
@@ -1037,7 +1037,7 @@ Extension
 **UC15: List patrons with overdue books**
 
 **MSS**
-1. User lists all patrons **UC02**.
+1. User <u>lists all patrons UC02</u>.
 
 2. User requests to view all patrons with overdue books.
 
@@ -1058,9 +1058,9 @@ Extension
 **UC16: Request Book**
 
 **MSS**
-1. User lists all patrons **UC02**.
+1. User <u>lists all patrons UC02</u>.
 
-2. User lists all books **UC07**.
+2. User <u>lists all books UC07</u>.
 
 3. User requests to establish a request relationship and provides index of the patron and index of the book in lists.
 
