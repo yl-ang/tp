@@ -46,7 +46,7 @@ Given below are my contributions to the project.
 * **Enhancements to existing features**:
   * Updated AB-3 person to patron through removal of person address. [\#60](https://github.com/AY2122S2-CS2103T-W14-1/tp/pull/60)
   * Adaptation of person features to match updated patron attributes. [\#60](https://github.com/AY2122S2-CS2103T-W14-1/tp/pull/60)
-  * Heavy refactoring of person associated classes to accommodate for patron. [\#64](https://github.com/AY2122S2-CS2103T-W14-1/tp/pull/60), [\#64](https://github.com/AY2122S2-CS2103T-W14-1/tp/pull/64)
+  * Heavy refactoring of person associated classes to accommodate for patron. [\#60](https://github.com/AY2122S2-CS2103T-W14-1/tp/pull/60), [\#64](https://github.com/AY2122S2-CS2103T-W14-1/tp/pull/64)
   * Added test cases for patron features. [\#102](https://github.com/AY2122S2-CS2103T-W14-1/tp/pull/102)
   * Edited existing test cases for original person features to accommodate for patron. [\#70](https://github.com/AY2122S2-CS2103T-W14-1/tp/pull/70)
 
