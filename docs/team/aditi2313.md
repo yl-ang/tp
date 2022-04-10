@@ -5,9 +5,7 @@ title: Aditi Gupta's Project Portfolio Page
 
 ### Project: LibTask
 
-LibTask is a desktop application used by librarians to keep track of books, overdue books, and contact details of patrons who have borrowed them and those who requested them. The user interacts with it using a CLI, and it has a GUI created with JavaFX. It is written in Java, and has about 10 kLoC. This project is based on AddressBook - Level 3.
-
-Given below are my contributions to the project.
+LibTask is a desktop application used by librarians to keep track of books, overdue books, and contact details of patrons who have borrowed them and those who requested them. The user interacts with it using a CLI, and it has a GUI created with JavaFX. It is written in Java, and has about 10 kLoC. This project is based on AddressBook - Level 3. Given below are my contributions to the project.
 
 * **New Feature**:
   * Added ID attribute to patron. [\#60](https://github.com/AY2122S2-CS2103T-W14-1/tp/pull/60)
@@ -17,24 +15,19 @@ Given below are my contributions to the project.
       * Assists communication and management of student book loans by librarians if they can link library users to their student/staff IDs.
     * Highlights:
       * This addition was challenging as it required several checks and constraints to be placed on the format of NUS student/staff IDs.
-      * This new addition to patron's existing attributes required several precautions to be taken during implementation to:
-        1. Ensure that no patron and patron feature links were broken.
-        2. Maintain data integrity in writing and reading patron information to and from json files.  
+      * Several precautions needed to be taken during implementation such as ensuring that no patron feature links were broken and data integrity was maintained in writing and reading information to and from json files.  
   * Added patron overdue feature to LibTask's existing patron features with tests. [\#102](https://github.com/AY2122S2-CS2103T-W14-1/tp/pull/102)
     * What it does:
       * Allows users to view a list of all patrons with overdue books.
     * Justification:
-      1. Improves book processing by enhancing communication between libraries and library users.
-      2. Increases LibTask's efficiency and ease of navigation by allowing users to minimise command executions.
+      * Improves book processing by enhancing communication between libraries and library users. Increases LibTask's efficiency and ease of navigation by allowing users to minimise command executions.
     * Highlights:
       * This addition to LibTask's existing patron features was challenging to implement due to the following reasons:
         1. Feature required double filtering of data (LibTask's patron list had to be filtered based on the statuses of every book borrowed by each patron).
         2. Implementation of this feature had to be done similar to how other patron and book features had been implemented to maintain similar levels of abstraction (hard SLAP) and code quality.
         3. Implementation of the patron overdue feature required sound knowledge of features added by other teammates to reduce code redundancies.
 
-* **Code contributed**: [RepoSense link](https://nus-cs2103-ay2122s2.github.io/tp-dashboard/?search=&sort=variance&sortWithin=totalCommits&timeframe=commit&mergegroup=&groupSelect=groupByRepos&breakdown=true&checkedFileTypes=docs~functional-code~test-code~other&since=2022-02-18&tabOpen=true&tabType=authorship&tabAuthor=aditi2313&tabRepo=AY2122S2-CS2103T-W14-1%2Ftp%5Bmaster%5D&authorshipIsMergeGroup=false&authorshipFileTypes=docs~functional-code~test-code&authorshipIsBinaryFileTypeChecked=false)
-
-* **PR Review contributions**: [tp Comments Dashboard](https://nus-cs2103-ay2122s2.github.io/dashboards/contents/tp-comments.html)
+* **Code and PR Review contributions**: [RepoSense link](https://nus-cs2103-ay2122s2.github.io/tp-dashboard/?search=&sort=variance&sortWithin=totalCommits&timeframe=commit&mergegroup=&groupSelect=groupByRepos&breakdown=true&checkedFileTypes=docs~functional-code~test-code~other&since=2022-02-18&tabOpen=true&tabType=authorship&tabAuthor=aditi2313&tabRepo=AY2122S2-CS2103T-W14-1%2Ftp%5Bmaster%5D&authorshipIsMergeGroup=false&authorshipFileTypes=docs~functional-code~test-code&authorshipIsBinaryFileTypeChecked=false), [tp Comments Dashboard](https://nus-cs2103-ay2122s2.github.io/dashboards/contents/tp-comments.html)
 
 * **Project management**:
   * Suggested development of a library management software during initial project ideation stages.
@@ -72,6 +65,4 @@ Given below are my contributions to the project.
   * Bugs reported for other teams can be found [here](https://github.com/aditi2313/ped/issues).
 
 * **Tools**:
-  * Assertions
-  * Gradle
-  * Intellij
+  * Assertions, Gradle, Intellij
