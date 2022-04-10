@@ -10,7 +10,7 @@ Class Patron
 Class BookStatus
 }
 
-Book "*" -up-> "0..3" Patron : requested by >
+Book "*" -up-> "*" Patron : requested by >
 Book -up-> "1" BookStatus
 BookStatus -up-> "0..1" Patron : borrowed by >
 @enduml
