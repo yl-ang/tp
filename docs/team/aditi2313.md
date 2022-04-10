@@ -24,17 +24,14 @@ Given below are my contributions to the project.
     * What it does:
       * Allows users to view a list of all patrons with overdue books.
     * Justification:
-      1. Improves book processing by enhancing communication between libraries and library users.
-      2. Increases LibTask's efficiency and ease of navigation by allowing users to minimise command executions.
+      * Improves book processing by enhancing communication between libraries and library users. Increases LibTask's efficiency and ease of navigation by allowing users to minimise command executions.
     * Highlights:
       * This addition to LibTask's existing patron features was challenging to implement due to the following reasons:
         1. Feature required double filtering of data (LibTask's patron list had to be filtered based on the statuses of every book borrowed by each patron).
         2. Implementation of this feature had to be done similar to how other patron and book features had been implemented to maintain similar levels of abstraction (hard SLAP) and code quality.
         3. Implementation of the patron overdue feature required sound knowledge of features added by other teammates to reduce code redundancies.
 
-* **Code contributed**: [RepoSense link](https://nus-cs2103-ay2122s2.github.io/tp-dashboard/?search=&sort=variance&sortWithin=totalCommits&timeframe=commit&mergegroup=&groupSelect=groupByRepos&breakdown=true&checkedFileTypes=docs~functional-code~test-code~other&since=2022-02-18&tabOpen=true&tabType=authorship&tabAuthor=aditi2313&tabRepo=AY2122S2-CS2103T-W14-1%2Ftp%5Bmaster%5D&authorshipIsMergeGroup=false&authorshipFileTypes=docs~functional-code~test-code&authorshipIsBinaryFileTypeChecked=false)
-
-* **PR Review contributions**: [tp Comments Dashboard](https://nus-cs2103-ay2122s2.github.io/dashboards/contents/tp-comments.html)
+* **Code and PR Review contributions**: [RepoSense link](https://nus-cs2103-ay2122s2.github.io/tp-dashboard/?search=&sort=variance&sortWithin=totalCommits&timeframe=commit&mergegroup=&groupSelect=groupByRepos&breakdown=true&checkedFileTypes=docs~functional-code~test-code~other&since=2022-02-18&tabOpen=true&tabType=authorship&tabAuthor=aditi2313&tabRepo=AY2122S2-CS2103T-W14-1%2Ftp%5Bmaster%5D&authorshipIsMergeGroup=false&authorshipFileTypes=docs~functional-code~test-code&authorshipIsBinaryFileTypeChecked=false), [tp Comments Dashboard](https://nus-cs2103-ay2122s2.github.io/dashboards/contents/tp-comments.html)
 
 * **Project management**:
   * Suggested development of a library management software during initial project ideation stages.
