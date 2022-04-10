@@ -938,7 +938,7 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
 * 3b. The return date of the book is invalid.
 
-    * 3a1. LibTask shows an error message.
+    * 3b1. LibTask shows an error message.
 
   Use case resumes from step 3.
 
@@ -972,7 +972,7 @@ Use case ends.
 
 * 2b. The book is not borrowed by the patron.
 
-    * 2a1. LibTask shows an error message.
+    * 2b1. LibTask shows an error message.
 
   Use case resumes from step 2.
 
