@@ -768,7 +768,7 @@ To list all books borrowed by or requested by a specific patron, you can enter t
 
 * Lists all books borrowed by or requested by a patron at `INDEX`. `INDEX` refers to the index number of the patron of interest, as shown in the displayed patron list.
 
-* `INDEX` must be a positive integer 1, 2, 3, …
+* `INDEX` **must be a positive integer** 1, 2, 3, …
 
 * `INDEX` cannot exceed the largest index number in the displayed patron list.
 
