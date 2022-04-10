@@ -15,9 +15,7 @@ LibTask is a desktop application used by librarians to keep track of books, over
       * Assists communication and management of student book loans by librarians if they can link library users to their student/staff IDs.
     * Highlights:
       * This addition was challenging as it required several checks and constraints to be placed on the format of NUS student/staff IDs.
-      * This new addition to patron's existing attributes required several precautions to be taken during implementation to:
-        1. Ensure that no patron and patron feature links were broken.
-        2. Maintain data integrity in writing and reading patron information to and from json files.  
+      * Several precautions needed to be taken during implementation such as ensuring that no patron feature links were broken and data integrity was maintained in writing and reading information to and from json files.  
   * Added patron overdue feature to LibTask's existing patron features with tests. [\#102](https://github.com/AY2122S2-CS2103T-W14-1/tp/pull/102)
     * What it does:
       * Allows users to view a list of all patrons with overdue books.
