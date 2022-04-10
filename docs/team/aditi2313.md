@@ -32,7 +32,6 @@ LibTask is a desktop application used by librarians to keep track of books, over
 * **Project management**:
   * Suggested development of a library management software during initial project ideation stages.
   * Proposed LibTask functionalities and features
-  * Changing product icon
   * Reviewed and approved PRs for merging
   * Created issues for PRs
 
