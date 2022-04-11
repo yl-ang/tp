@@ -20,8 +20,8 @@ Given below are my contributions to the project.
       * Will also allow them to check if any of the fields were incorrectly entered.
     * Highlights
       * This command changes the way users can interact with LibTask, making it more efficient for librarians who have to do similar work repeatedly.
-      * Hard to implement with the original idea of using arrow keys to navigate the previous commands as Javafx tends to eat up all function keys. To work around this I decided to use the `u` key as it was a key that was least likely to cause conflicts with other features
-      * It was also the only feature that would edit the CommandBox which required additional work to implement. It required the help of Yong Liang who was working on the GUI to learn which functions under the UI was responsible for updating the CommandBox so that it would update properly. 
+      * Hard to implement with the original idea of using arrow keys to navigate the previous commands as Javafx tends to consume all function keys. To work around this I decided to use the `u` key as it was a key that was least likely to cause conflicts with other features
+      * It was also the only feature that would edit the CommandBox which required additional work to implement. 
       * Credits
         * Worked with [Ang Yong Liang](http://github.com/yl-ang) to make sure that the previous command would show up in the CommandBox.
 
@@ -29,12 +29,11 @@ Given below are my contributions to the project.
     * What it does
       * Allows users to quickly find certain books using a search query
     * Justification
-      * It will make it easier for a librarian to find all books that are part of the same category should a student ask for similar books
+      * It will make it easier for a librarian to find all books that are part of the same category or author should a student ask for similar books
       * It would also be able to search for multiple editions of the same book if they are not sure which is the one that they need to find.
     * Highlights
-      * This is quite similar to the patron find command however it can now take in multiple arguments rather than just one.
-      * Requires more work to ensure that only one argument is parsed into the software since it can be one of 3.
-      * The decision was also made to have it only search for a substring rather than match words exactly like `patron find`. As there can be many books with similar titles, it made more sense to allow the user to search for them via a substring and then allow them to choose what it was that they wanted. This allows for better user freedom. 
+      * Requires more work than patron fine, to ensure that only one argument is parsed into the software since it can be one of 3.
+      * The decision was also made to have it only search for a substring rather than match words exactly like `patron find`. As there can be many books with similar titles, it made more sense for it to search for parts of a title and let the user decide if that was what they were looking for. 
 
 
 * **Code contributed**: [RepoSense link](https://nus-cs2103-ay2122s2.github.io/tp-dashboard/?search=&sort=groupTitle&sortWithin=title&since=2022-02-18&timeframe=commit&mergegroup=&groupSelect=groupByRepos&breakdown=false&tabOpen=true&tabType=authorship&tabAuthor=Halpfrog&tabRepo=AY2122S2-CS2103T-W14-1%2Ftp%5Bmaster%5D&authorshipIsMergeGroup=false&authorshipFileTypes=docs~functional-code~test-code&authorshipIsBinaryFileTypeChecked=false)
