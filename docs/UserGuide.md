@@ -49,7 +49,9 @@ If you are an advanced user, you can refer to our [Command summary](#5-command-s
 
 1. Copy the file to the folder you want to use as the home folder for your LibTask.
 
-1. Double-click the file to start the app. The GUI is similar to the one shown below and should appear in a few seconds.<br>
+1. Double-click the file to start the app. You can follow [this guide](https://nus-cs2103-ay2122s2.github.io/website/admin/tp-pe.html#a-launching-the-jar-file-2) if double-clicking doesn't work.
+
+1. The GUI is similar to the one shown below and should appear in a few seconds.<br>
    ![Ui](images/Ui.png)
 
 1. You can refer to [LibTask GUI Overview](#22-libtask-gui-overview) to understand what each component in the GUI does.
@@ -185,8 +187,6 @@ Method B:
 Subsequently, when Harper Lee returns "The Da Vinci Code", find the book by entering `book find n/The Da Vinci Code` (which would result in it being displayed first) followed by `return b/1` (more about the `return` command [here](#337-returning-a-book--return)). `The Da Vinci Code` is hence returned and the `Result box` would remind you to notify Bob Miller that the book is now available.
 
 **Congratulations! You have completed our tutorial!** You can now head over to our [Features](#3-features) section to learn more about our commands in greater detail.
-
---------------------------------------------------------------------------------------------------------------------
 
 ## **3. Features**
 
