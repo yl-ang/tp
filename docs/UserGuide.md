@@ -182,7 +182,7 @@ Method B:
 
 3. Enter command `book request 1 1` in the Command box. `Bob Miller` has now requested for `The Da Vinci Code`. You can confirm this by viewing the book's status in the book list.
 
-Subsequently, when Harper Lee returns "The Da Vinci Code", find the book by entering `book find n/The Da Vinci Code` (which would result in it being displayed first) followed by `return b/1` (more about the `return` command [here](#337-returning-a-book--return)). `The Da Vinci Code` is hence returned and the `Result box` would remind you to notify Bob Miller that the book is now available.
+Subsequently, when Harper Lee returns "The Da Vinci Code", you can find the book by entering `book find n/The Da Vinci Code` (which would result in it being displayed first) followed by `return b/1` (more about the `return` command [here](#337-returning-a-book--return)). `The Da Vinci Code` is hence returned and the `Result box` would remind you to notify Bob Miller that the book is now available.
 
 **Congratulations! You have completed our tutorial!** You can now head over to our [Features](#3-features) section to learn more about our commands in greater detail.
 
