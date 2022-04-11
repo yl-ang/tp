@@ -188,8 +188,6 @@ Subsequently, when Harper Lee returns "The Da Vinci Code", find the book by ente
 
 **Congratulations! You have completed our tutorial!** You can now head over to our [Features](#3-features) section to learn more about our commands in greater detail.
 
---------------------------------------------------------------------------------------------------------------------
-
 ## **3. Features**
 
 This section describes the features supported by LibTask and how to use them in general. Details of some commands may vary as stated in their respective sections.
