@@ -94,8 +94,7 @@ to doing this tutorial.
    `patron add n/Alice s/A0123456H p/90123212 e/profA@u.nus.edu t/professor`: Adds a patron named `Alice` into
    LibTask's patron list.
 
-   `patron add n/Bob Miller s/A4468931X p/92940284 e/bobmiller@u.nus.edu t/student`: Adds a patron named
-   `Bob Miller` into LibTask's patron list.
+   `patron add n/Bob Miller s/A4468931X p/92940284 e/bobmiller@u.nus.edu`: Adds a patron named `Bob Miller` into LibTask's patron list.
 
    `patron add n/Harper Lee s/A0988773M p/91437496 e/harperlee@u.nus.edu`: Adds a patron named `Harper Lee` into
    LibTask's patron list.
@@ -108,11 +107,10 @@ to doing this tutorial.
    `book add n/Harry Potter i/97888-69183-157 a/J.K.Rowling t/Thriller t/Magic`: Adds a book titled `Harry Potter` 
       into LibTask's book list.
 
-   `book add n/To Kill a Mockingbird i/97804-46310-789 a/Harper Lee t/Thriller t/Suspense`: Adds a book title 
+   `book add n/To Kill a Mockingbird i/97804-46310-789 a/Harper Lee t/Thriller`: Adds a book title 
       `To Kill a Mockingbird` into LibTask's book list.
 
-   `book add n/The Da Vinci Code i/97803-85513-227 a/Dan Brown t/Thriller t/Mystery t/Crime`: Adds a book titled 
-     `The Da Vinci Code` into LibTask's book list.
+   `book add n/The Da Vinci Code i/97803-85513-227 a/Dan Brown t/Crime`: Adds a book titled `The Da Vinci Code` into LibTask's book list.
 
 <div style="page-break-after: always;"></div>
 
