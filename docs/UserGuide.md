@@ -188,8 +188,6 @@ Subsequently, when Harper Lee returns "The Da Vinci Code", find the book by ente
 
 --------------------------------------------------------------------------------------------------------------------
 
-<div style="page-break-after: always;"></div>
-
 ## **3. Features**
 
 This section describes the features supported by LibTask and how to use them in general. Details of some commands may vary as stated in their respective sections.
