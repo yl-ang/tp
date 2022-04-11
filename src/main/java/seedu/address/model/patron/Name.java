@@ -12,7 +12,7 @@ import java.util.Arrays;
 public class Name {
 
     public static final String MESSAGE_CONSTRAINTS =
-            "Names should only contain upto a max of 40 alphanumeric characters and spaces, and should not be blank.";
+            "Names should only contain up to a max of 40 alphanumeric characters and spaces, and should not be blank.";
 
     /*
      * The first character of the address must not be a whitespace,

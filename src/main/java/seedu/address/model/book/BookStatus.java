@@ -196,7 +196,7 @@ public class BookStatus {
         try {
             Date parsedDate = STATUS_DATE_FORMAT.parse(dateString);
             String parsedDateString = STATUS_DATE_FORMAT.format(parsedDate);
-            return parsedDateString.equals(dateString);
+            return parsedDateString.toLowerCase().equals(dateString.toLowerCase());
         } catch (ParseException e) {
             return false;
         }
