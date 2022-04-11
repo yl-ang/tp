@@ -20,10 +20,10 @@ Given below are my contributions to the project.
       * Will also allow them to check if any of the fields were incorrectly entered.
     * Highlights
       * This command changes the way users can interact with LibTask, making it more efficient for librarians who have to do similar work repeatedly.
-      * As TextInputControl consumes functions keys, this feature was designed to be called by the "u" key. This was different from the original plan of using arrow keys. 
+      * As TextInputControl consumes functions keys, this feature was designed to be called by the "u" key. This was a change from the original plan of using arrow keys. 
       * It was also the only feature that would edit the CommandBox which required additional work to implement. 
       * Credits
-        * Worked with [Ang Yong Liang](http://github.com/yl-ang) to make sure that the previous command would show up in the CommandBox.
+        * Worked with [Ang Yong Liang](http://github.com/yl-ang) to make sure it updated the properly
 
   * Added the ability for users to search for a book by its category tag, author or name.
     * What it does
@@ -32,13 +32,11 @@ Given below are my contributions to the project.
       * It will make it easier for a librarian to find all books that are part of the same category or author.
       * Allows the librarian to quickly find all books related to a topic. 
     * Highlights
-      * Requires more work than patron fine, to ensure that only one argument is parsed into the software since it can be one of 3.
-      * The decision was also made to have it only search for a substring rather than match words exactly like `patron find`. As there can be many books with similar titles, it made more sense for it to search for parts of a title and let the user decide if that was what they were looking for. 
+      * Requires more work than patron find, to ensure that only one argument is parsed into the software since it can be one of 3.
+      * Required the creation of 3 predicates to check for the validity of each prefix. 
 
 
 * **Code contributed**: [RepoSense link](https://nus-cs2103-ay2122s2.github.io/tp-dashboard/?search=&sort=groupTitle&sortWithin=title&since=2022-02-18&timeframe=commit&mergegroup=&groupSelect=groupByRepos&breakdown=false&tabOpen=true&tabType=authorship&tabAuthor=Halpfrog&tabRepo=AY2122S2-CS2103T-W14-1%2Ftp%5Bmaster%5D&authorshipIsMergeGroup=false&authorshipFileTypes=docs~functional-code~test-code&authorshipIsBinaryFileTypeChecked=false)
-
-
 * **Project management**:
   * Approved and reviewed PR's for merging
   * Created issues for PR's to recommend changes
