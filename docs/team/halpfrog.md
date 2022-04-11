@@ -20,7 +20,7 @@ Given below are my contributions to the project.
       * Will also allow them to check if any of the fields were incorrectly entered.
     * Highlights
       * This command changes the way users can interact with LibTask, making it more efficient for librarians who have to do similar work repeatedly.
-      * Hard to implement with the original idea of using arrow keys to navigate the previous commands as Javafx tends to consume all function keys. To work around this I decided to use the `u` key as it was a key that was least likely to cause conflicts with other features
+      * As TextInputControl consumes functions keys, this feature was designed to be called by the "u" key. This was different from the original plan of using arrow keys. 
       * It was also the only feature that would edit the CommandBox which required additional work to implement. 
       * Credits
         * Worked with [Ang Yong Liang](http://github.com/yl-ang) to make sure that the previous command would show up in the CommandBox.
@@ -29,8 +29,8 @@ Given below are my contributions to the project.
     * What it does
       * Allows users to quickly find certain books using a search query
     * Justification
-      * It will make it easier for a librarian to find all books that are part of the same category or author should a student ask for similar books
-      * It would also be able to search for multiple editions of the same book if they are not sure which is the one that they need to find.
+      * It will make it easier for a librarian to find all books that are part of the same category or author.
+      * Allows the librarian to quickly find all books related to a topic. 
     * Highlights
       * Requires more work than patron fine, to ensure that only one argument is parsed into the software since it can be one of 3.
       * The decision was also made to have it only search for a substring rather than match words exactly like `patron find`. As there can be many books with similar titles, it made more sense for it to search for parts of a title and let the user decide if that was what they were looking for. 
@@ -50,8 +50,7 @@ Given below are my contributions to the project.
   * Added the Book find command[\#110](https://github.com/AY2122S2-CS2103T-W14-1/tp/pull/110)
   * Added test cases for Book find[\#132](https://github.com/AY2122S2-CS2103T-W14-1/tp/pull/132)
   * Add test cases for previous commands[\#66](https://github.com/AY2122S2-CS2103T-W14-1/tp/pull/66)
-
-
+  
 * **Documentation**:
   * User Guide:
     * Add Book find and the previous Command feature to the User Guide[\#139](https://github.com/AY2122S2-CS2103T-W14-1/tp/pull/139)
@@ -60,7 +59,6 @@ Given below are my contributions to the project.
   * Developer Guide:
     * Add use cases, NFR and Glossary to the DG[\#30](https://github.com/AY2122S2-CS2103T-W14-1/tp/pull/30) [\#144](https://github.com/AY2122S2-CS2103T-W14-1/tp/pull/144)
     * Add Book Find feature to the use cases in the DG[\#121](https://github.com/AY2122S2-CS2103T-W14-1/tp/pull/121)
-    * Add line breaks throughout the DG to enable better conversion to a pdf[\#224](https://github.com/AY2122S2-CS2103T-W14-1/tp/pull/224)
     * Add in manual test cases and implementation details for Book find [\#214](https://github.com/AY2122S2-CS2103T-W14-1/tp/pull/214)
 
 * **Review/mentoring contributions**:
