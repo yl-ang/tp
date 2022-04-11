@@ -37,7 +37,7 @@ LibTask is a desktop application used by librarians to keep track of books, over
 
 * Ensured that all milestone progress are reached (which includes team-based and individual-based tasks). We managed to achieve 100% of the recommended milestone tasks, including early wrap up for both v1.2 (only achieved by 11% of the cohort) and v1.3.
 
-* Managed releases [v1.2](https://github.com/AY2122S2-CS2103T-W14-1/tp/releases/tag/v1.2), [v1.3.trial](https://github.com/AY2122S2-CS2103T-W14-1/tp/releases/tag/v1.3.trial) and [v.1.3](https://github.com/AY2122S2-CS2103T-W14-1/tp/releases/tag/v1.3) on GitHub.
+* Managed releases [v1.2](https://github.com/AY2122S2-CS2103T-W14-1/tp/releases/tag/v1.2), [v1.3.trial](https://github.com/AY2122S2-CS2103T-W14-1/tp/releases/tag/v1.3.trial), [v.1.3](https://github.com/AY2122S2-CS2103T-W14-1/tp/releases/tag/v1.3) and [v1.4](https://github.com/AY2122S2-CS2103T-W14-1/tp/releases/tag/v1.4) on GitHub.
 
 #### Community
 
@@ -96,4 +96,7 @@ Given below are sections I contributed to the Developer Guide. They showcase my 
 
 * Manual Testing Section:
   * Added manual testing instructions for delete book, borrow book, return book, and request book commands.
+
+* Effort Section:
+  * Added explanation and justifications of efforts put in by the team.
 
